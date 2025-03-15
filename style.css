@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #DAECF6;
+}
+/* Nav bar start */
+@media screen and (max-width: 280px){
+    .settings{
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 650px){
+    nav{
+        min-height: calc(5vh - 2%);
+        height: fit-content!important;
+        width: 96%!important;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2%!important;
+    }
+    .navlink{
+        width: fit-content!important;
+    }
+    #nav1{
+        width: 10%!important;
+    }
+    #nav5{
+        margin: auto;
+    }
+    .settings{
+        width: 20%!important;
+        padding-right: 5%;
+        margin-left: auto;
+    }
+    #nav6:focus #language{
+        display: block;
+    }
+    #language{
+        margin-top: 1%;
+    }
+    nav a{
+        font-size: 6vmin!important;
+    }
+}
+@media screen and (max-height: 600px){
+    img{
+        height: unset!important;
+        width: 70%!important;
+    }
+    #nav1 img{
+        width: 60%!important;
+    }
+    #language{
+        margin-top: 1%;
+        right: calc(9.8% / 2 * 90 / 100)!important;
+    }
+    #reallan{
+        font-size: 6vmin!important;
+        line-height: 1.75!important;
+    }
+}
+    nav{
+        height: calc(5vh - 1%);
+        width: 98%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1%;
+        /* position: fixed; */
+        /* padding: 0.5% 0.5% 0% 0.5%; */
+    }
+    .navlink{
+        height: 100%;
+        width: 21.25%;
+        min-width: 100px;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.25s;
+    }
+    .navlink:hover{
+        transform: scale(1.15);
+    }
+    .settings{
+        height: 100%;
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    #nav6, #nav7{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .navpic{
+        height: 100%;
+        width: 5%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navpic:hover{
+        cursor: pointer;
+    }
+    #nav6{
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    .navimg{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav6:hover #language{
+        display: block;
+    }
+    #language{
+        display: none;
+        position: absolute;
+        min-width: calc(100vw / 20 - 10px);
+        background-color: white;
+        padding: 5px;
+        z-index: 1;
+        animation: appear 0.5s;
+    }
+    #f{
+        cursor: default;
+        color: white!important;
+        font-size: 0.75em!important;
+    }
+    #fk{
+        cursor: default;
+        font-size: 0.75em!important;
+        line-height: 1.5em!important;
+        /* border: 1px solid red; */
+    }
+    @keyframes appear{
+        from{
+            transform: translateY(-5vmin);
+            visibility: none;
+            opacity: 0;
+        }
+        to{
+            transform: translatey(0vw);
+            opacity: 1;
+        }
+    }
+    #language a{
+        display: block;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    img{   
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        filter: grayscale(1) invert(1);
+    }
+    nav a{
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: none;
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+/* Nav bar end */
+/* Body start */
+.body{
+    height: fit-content;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 650px){
+    .timetable{
+        width: 95%!important;
+        margin-top: 10%!important;
+    }
+    .timetable p{
+        font-size: 4vmin!important;
+    }
+    .timetable p span{
+        font-size: 3vmin!important;
+    }
+    .date p{
+        font-size: 8vmin!important;
+    }
+    #year{
+        font-size: 4vmin!important;
+    }
+}
+.timetable{
+    margin-top: 2.5%;
+    height: fit-content;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date{
+    width: 100%;
+    background: #F5F5F7;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.backandfourth{
+    height: 100%;
+    width: 20%;
+}
+.datetitle{
+    height: 100%;
+    width: 60%;
+}
+.date p{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+#year{
+    font-size: 0.75em;
+}
+.weekday{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ddd;
+}
+.weekday p{
+    padding: 1%;
+    margin: 0;
+    height: 100%;
+    width: calc(100% / 7);
+    text-align: center;
+    font-size: 1.25em;
+}
+.day{
+    height: fit-content;
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+.week{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.week p{
+    padding: 1%;
+    margin: 0;
+    width: calc(100% / 7);
+    aspect-ratio: 2;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.25em;
+    align-items: stretch;
+    transition: transform 0.25s;
+}
+.week p:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.empty:hover{
+    cursor: default!important;
+}
+@media screen and (max-width: 650px) {
+    .week p span{
+        font-size: 4vmin !important;
+    }
+}
+.week p span{
+    font-size: 1em;
+    word-break: break-word;
+}
+.task{
+    background-color: burlywood;
+}
+#today{
+    background-color: #1abc9c;
+}
+.zoom{
+    display: none;
+    height: 70%;
+    width: 70%;
+    background-color: lightcoral;
+    border-radius: 25px;
+    position: fixed;
+    top: auto;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    border: 5px solid black;
+    animation: appear 0.5s;
+}
+@keyframes appear{
+    from{
+        transform: translateY(-5vmin);
+        visibility: none;
+        opacity: 0;
+    }
+    to{
+        transform: translatey(0vw);
+        opacity: 1;
+    }
+}
+#taskinput{
+    height: 100%;
+    width: 95%;
+}
+#taskclose{
+    height: fit-content;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 4vmin;
+    transition: transform 0.25s;
+}
+#taskclose:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+.zoom textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: lightcoral;
+    font-size: 3em;
+    padding: 3%;
+    margin: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.zoom p{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: lightcoral;
+    padding: 3%;
+    margin: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+@media screen and (max-width: 650px){
+    .zoom textarea{
+        font-size: 8vmin!important;
+    }
+    .zoom a{
+        font-size: 8vmin!important;
+    }
+    #taskinput{
+        width: 90%!important;
+    }
+    #taskclose{
+        font-size: 8vmin!important;
+    }
+}
+@media screen and (max-height: 600px){
+    .zoom textarea{
+        font-size: 8vmin!important;
+    }
+    .zoom a{
+        font-size: 8vmin!important;
+    }
+    #taskclose{
+        font-size: 8vmin!important;
+    }
+}
+.zoom a{
+    font-size: 3em;
+    line-height: 1.5;
+    text-decoration: underline;
+    font-style: italic;
+    color: black;
+}
+/* Body end */
+/* Footer start */
+.footer{
+    margin-top: 20%;
+    height: 5vh;
+    width: 100%;
+    background-color: black;
+    bottom: 0;
+    position: relative;
+}
+/* Footer end */

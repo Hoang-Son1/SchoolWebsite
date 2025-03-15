@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="nav1" class="navpic">
+            <img onclick="logo()" src="1.png" alt="logo">
+        </div>
+        <div id="nav2" class="navlink">
+            <a href="news.html">News&nbsp </a>
+        </div>
+        <div id="nav3" class="navlink">
+            <a href="timetable.html"> Timetable&nbsp </a>
+        </div>
+        <div id="nav4" class="navlink">
+            <a href="library.html">Library&nbsp </a>
+        </div>
+        <div id="nav5" class="navlink">
+            <a href="entertainment.html">Entertainment&nbsp </a>
+        </div>
+        <div class="settings">
+            <div id="nav6" class="navpic">
+                <div class="navimg">
+                    <img src="pic2.png" alt="language">
+                </div>
+                <div id="language">
+                    <a id="f">:</a>
+                    <a id="fk">Language:</a>
+                    <a id="reallan" href="">Korean</a>
+                    <a id="reallan" href="">English</a>
+                </div>
+            </div>
+            <div id="nav7" class="navpic">
+                <img src="pic3.png" alt="pfp">
+            </div>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="timetable">
+            <div class="date">      
+                <div id="back" class="backandfourth">
+                    <p>&#10094;</p>
+                </div>
+                <div class="datetitle">
+                    <div id="month">
+                        <p>March</p>
+                    </div>
+                    <div id="year">
+                        <p>2025</p>
+                    </div>
+                </div>
+                <div id="forward" class="backandfourth"> 
+                    <p>&#10095;</p>
+                </div>
+            </div>
+            <div class="weekday">
+                <p>Mon</p>
+                <p>Tue</p>
+                <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+            </div>
+            <div class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom2()" class="task">7 <br> <span>Jennie</span></p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom3()" class="task">14 <br> <span>Le sserafim</span></p>
+                    <p onclick="zoom4()" id="today">15 <br> <span>Do HW</span></p>
+                    <p onclick="zoom()">16</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom5()" class="task">17 <br> <span>NMIXX</span></p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom6()" class="task">23 <br> <span>NJZ</span></p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom7()" class="task">24 <br> <span>BST exam</span></p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom8()" class="task">27 <br> <span>Math Adv exam</span></p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>                  
+                    <p class="empty"></p>                 
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="blank" class="zoom">
+                <div id="taskinput">
+                    <textarea placeholder="Type your task in here to keep you organised"></textarea>
+                </div>
+                <div onclick="zoom()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank2" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://www.jenn.ie/">Jennie's 1st studio album "Ruby" coming out 12AM KST</a></p>
+                </div>
+                <div onclick="zoom2()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank3" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://le-sserafim.lnk.to/HOT">Le sserafim's 5th mini album "Hot" coming out 1PM KST</a></p>                
+                </div>    
+                <div onclick="zoom3()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank4" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Math, Business Studies and Physics homework due today</a></p>
+                </div>
+                <div onclick="zoom4()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank5" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://nmixx.lnk.to/Fe3O4FORWARD">NMIXX's 4th extended playlist "Fe3O4: FORWARD" coming out 6PM EST</a></p>
+                </div>
+                <div onclick="zoom5()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank6" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://www.instagram.com/njz_official/">NJZ performing new music at COMPLEXCON HongKong</a></p>
+                </div>
+                <div onclick="zoom6()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank7" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Business Studies exam</a></p>
+                </div>
+                <div onclick="zoom7()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank8" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Math Advanced exam</a></p>
+                </div>
+                <div onclick="zoom8()" id="taskclose">&#10006;</div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <a href="GG">GG</a>
+    </div> -->
+</body>
+</html>
