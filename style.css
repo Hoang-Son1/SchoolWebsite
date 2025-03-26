@@ -461,6 +461,7 @@ html, body{
     width: 100%;
     background-color: black;
     bottom: 0;
+    padding: 0;
     position: relative;
 }
 /* Footer end */
