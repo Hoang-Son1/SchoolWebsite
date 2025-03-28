@@ -59,7 +59,7 @@ html, body{
     }
 }
 @media screen and (max-height: 600px){
-    img{
+    nav img{
         height: unset!important;
         width: 70%!important;
     }
@@ -76,7 +76,7 @@ html, body{
     }
 }
     nav{
-        height: calc(5vh - 1%);
+        height: calc(5vh - 2%);
         width: 98%;
         background-color: white;
         display: flex;
@@ -155,6 +155,12 @@ html, body{
         line-height: 1.5em!important;
         /* border: 1px solid red; */
     }
+    #reallan{
+        transition: transform 0.25s;
+    }
+    #reallan:hover{
+        transform: scale(1.15);
+    }
     @keyframes appear{
         from{
             transform: translateY(-5vmin);
@@ -191,10 +197,24 @@ html, body{
 .body{
     height: fit-content;
     width: 100%;
+    margin-top: 1.5%;
     color: rgba(0, 0, 0, 0.8);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    padding: 0% 5%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    row-gap: 20vh;
+}
+@media screen and (max-width: 1000px){
+    .body{
+        flex-direction: column!important;
+    }
+    .timetable{
+        width: 95%!important;
+    }
 }
 @media screen and (max-width: 650px){
     .timetable{
@@ -215,13 +235,14 @@ html, body{
     }
 }
 .timetable{
-    margin-top: 2.5%;
     height: fit-content;
-    width: 60%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     opacity: 90%;
+    z-index: 1;
+    border-radius: 25px;
 }
 .date{
     width: 100%;
@@ -231,6 +252,7 @@ html, body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 25px 25px 0px 0px;
 }
 .backandfourth{
     height: 100%;
@@ -269,6 +291,7 @@ html, body{
     display: flex;
     flex-direction: column;
     background-color: #eee;
+    border-radius: 0px 0px 25px 25px;
 }
 .week{
     height: fit-content;
@@ -316,12 +339,16 @@ html, body{
     background-color: lightcoral;
     border-radius: 25px;
     position: fixed;
-    top: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     padding: 0;
-    margin: 0;
+    margin: auto;
     flex-direction: row;
     border: 5px solid black;
     animation: appear 0.5s;
+    /* opacity: 85%; */
 }
 @keyframes appear{
     from{
@@ -408,38 +435,58 @@ html, body{
     font-style: italic;
     color: black;
 }
+@media screen and (max-width: 1000px){
+    .news{
+        width: 95%!important;
+    }
+}
 .news{
-    margin-top: 20vh;
     height: fit-content;
-    width: 100%;
-    background-color: white;
+    width: 45%;
+    background-color: #F5F5F7;
     opacity: 90%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 25px;
 }
 .news1{
     height: fit-content;
     width: 90%;
-    padding: 1%;
-    background-color: white;
+    padding: 0% 5%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .news1a{
     height: fit-content;
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.news1b{
+    height: fit-content;
+    width: 50%;
+    text-align: right;
+}
+.news1b a{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
 }
 .news2{
     height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* background-color: lawngreen; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .article{
     height: fit-content;
-    width: 14%;
-    /* background-color: lightblue; */
+    width: 25%;
+    min-width: 100px;
     margin: 3%;
 }
 .article:hover{
@@ -447,11 +494,77 @@ html, body{
 }
 .article p{
     text-align: center;
+    font-size: 1.15em;
 }
 .news img{
     width: 100%;
-    border-radius: 25px;
+    border-radius: 15px;
     aspect-ratio: 1;
+    object-fit: cover;
+}
+.library{
+    height: fit-content;
+    width: 95%;
+    background-color: #F5F5F7;
+    opacity: 90%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 25px;
+}
+.library1{
+    height: fit-content;
+    width: 90%;
+    padding: 0% 5%;
+    /* background-color: F5F5F7; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.library1a{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.library1b{
+    height: fit-content;
+    width: 50%;
+    text-align: right;
+}
+.library1b a{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+}
+.library2{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: lawngreen; */
+}
+.book{
+    height: fit-content;
+    width: 12%;
+    min-width: 100px;
+    margin: 3%;
+}
+.book:hover{
+    cursor: pointer;
+}
+.book p{
+    text-align: center;
+    font-size: 1.15em;
+}
+.library img{
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 /* Body end */
 /* Footer start */
