@@ -206,7 +206,7 @@ html, body{
     padding: 0% 5%;
     flex-wrap: wrap;
     box-sizing: border-box;
-    row-gap: 20vh;
+    row-gap: 15vh;
 }
 @media screen and (max-width: 1000px){
     .body{
@@ -461,9 +461,9 @@ html, body{
     height: fit-content;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 2em;
+    font-size: 2.25em;
 }
 .news1b{
     height: fit-content;
@@ -515,18 +515,18 @@ html, body{
     height: fit-content;
     width: 90%;
     padding: 0% 5%;
-    /* background-color: F5F5F7; */
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .library1a{
     height: fit-content;
-    width: 50%;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 2em;
+    font-size: 2.25em;
+    padding: 0% 3%;
 }
 .library1b{
     height: fit-content;
@@ -534,8 +534,6 @@ html, body{
     text-align: right;
 }
 .library1b a{
-    height: 100%;
-    width: 100%;
     font-size: 1.5em;
 }
 .library2{
@@ -561,6 +559,179 @@ html, body{
     font-size: 1.15em;
 }
 .library img{
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+.entertainment{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10vh;
+    column-gap: 5vw;
+}
+
+@media screen and (max-width: 705px){
+    .tools{
+        width: 95%!important;
+    }
+}
+.tools{
+    height: fit-content;
+    width: 45%;
+    /* min-width: 300px; */
+    background-color: #F5F5F7;
+    opacity: 90%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 25px;
+}
+.tools1{
+    height: fit-content;
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tools1a{
+    height: fit-content;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.25em;
+    padding: 0% 5%;
+}
+.tools1b{
+    height: fit-content;
+    width: 50%;
+    text-align: right;
+}
+.tools1b a{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+}
+.tools2{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: lawngreen; */
+}
+.tool{
+    height: fit-content;
+    width: 12%;
+    min-width: 100px;
+    margin: 3%;
+}
+.tool:hover{
+    cursor: pointer;
+}
+.tool p{
+    text-align: center;
+    font-size: 1.15em;
+}
+.tools img{
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 705px){
+    .videos{
+        width: 95%!important;
+    }
+}
+.videos{
+    height: fit-content;
+    width: 45%;
+    /* min-width: 300px; */
+    background-color: #F5F5F7;
+    opacity: 90%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 25px;
+}
+.videos1{
+    height: fit-content;
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.videos1a{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.25em;
+}
+.videos1b{
+    height: fit-content;
+    width: 50%;
+    text-align: right;
+}
+.videos1b a{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5em;
+}
+.videos2{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: lawngreen; */
+}
+.book{
+    height: fit-content;
+    width: 12%;
+    min-width: 100px;
+    margin: 3%;
+}
+.book:hover{
+    cursor: pointer;
+}
+.book p{
+    text-align: center;
+    font-size: 1.15em;
+}
+.videos img{
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1;
