@@ -676,7 +676,6 @@ html, body{
 .videos{
     height: fit-content;
     width: 45%;
-    /* min-width: 300px; */
     background-color: #F5F5F7;
     opacity: 90%;
     box-sizing: border-box;
@@ -716,7 +715,6 @@ html, body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: lawngreen; */
 }
 .book{
     height: fit-content;
