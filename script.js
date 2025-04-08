@@ -8,7 +8,7 @@
 //     }
 // }
 function logo(){
-    location.href ='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    location.href ='#body'
 }
 function zoom(){
     var x = document.getElementById("blank");
