@@ -206,7 +206,7 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 0% 5%;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -216,10 +216,10 @@ html, body{
     .body{
         flex-direction: column!important;
         padding: 0 10px!important;
-        width: calc(100% - 20px)!important;
     }
     .timetable{
-        width: 95%!important;
+        width: 80%!important;
+        margin-top: 3%!important;
     }
 }
 @media screen and (max-width: 650px){
@@ -461,6 +461,8 @@ html, body{
     box-sizing: border-box;
     z-index: 0;
     border-radius: 25px;
+    word-break: break-word;
+    hyphens: auto!important;
 }
 .news1{
     height: fit-content;
@@ -501,9 +503,11 @@ html, body{
     width: 25%;
     min-width: 75px;
     margin: 3%;
+    transition: transform 0.25s;
 }
 .article:hover{
     cursor: pointer;
+    transform: scale(1.15);
 }
 .article p{
     text-align: center;
@@ -528,6 +532,8 @@ html, body{
     box-sizing: border-box;
     z-index: 0;
     border-radius: 25px;
+    word-break: break-word;
+    hyphens: auto!important;
 }
 .library1{
     height: fit-content;
@@ -560,17 +566,19 @@ html, body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     /* background-color: lawngreen; */
 }
 .book{
     height: fit-content;
     width: 12%;
     min-width: 75px;
-    margin: 3%;
+    margin: 2%;
+    transition: transform 0.25s;
 }
 .book:hover{
     cursor: pointer;
+    transform: scale(1.15);
 }
 .book p{
     text-align: center;
@@ -615,6 +623,8 @@ html, body{
     box-sizing: border-box;
     z-index: 0;
     border-radius: 25px;
+    word-break: break-word;
+    hyphens: auto!important;
 }
 .tools1{
     height: fit-content;
@@ -657,9 +667,11 @@ html, body{
     width: 12%;
     min-width: 75px;
     margin: 3%;
+    transition: transform 0.25s;
 }
 .tool:hover{
     cursor: pointer;
+    transform: scale(1.15);
 }
 .tool p{
     text-align: center;
@@ -698,6 +710,8 @@ html, body{
     box-sizing: border-box;
     z-index: 0;
     border-radius: 25px;
+    word-break: break-word;
+    hyphens: auto!important;
 }
 .videos1{
     height: fit-content;
@@ -738,9 +752,12 @@ html, body{
     width: 12%;
     min-width: 75px;
     margin: 3%;
+    border-radius: 15px;
+    transition: transform 0.25s;
 }
 .vid:hover{
     cursor: pointer;
+    transform: scale(1.15);
 }
 .vid1 p{
     text-align: center;
@@ -752,6 +769,74 @@ html, body{
     aspect-ratio: 1;
     object-fit: cover;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .map{
+        width: 100%!important;
+    }
+}
+.map{
+    height: fit-content;
+    width: 95%;
+    background-color: #F5F5F7;
+    opacity: 90%;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 25px;
+    word-break: break-word;
+    hyphens: auto!important;
+    padding-bottom: 100px;
+}
+.map1{
+    height: fit-content;
+    width: 90%;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.map1a{
+    height: fit-content;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.25em;
+    padding: 0% 3%;
+}
+.map1b{
+    height: fit-content;
+    width: 50%;
+    text-align: right;
+}
+.map1b a{
+    font-size: 1.5em;
+}
+.map2{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.map2 img{
+    object-fit: cover;
+    width: 80%;
+}
+
+
+
+
+
+
 /* Body end */
 /* Footer start */
 .footer{
@@ -762,6 +847,5 @@ html, body{
     bottom: 0;
     padding: 0;
     position: relative;
-
 }
 /* Footer end */
