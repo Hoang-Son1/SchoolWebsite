@@ -4,25 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+<script src="/path/to/cdn/jquery.rwdImageMaps.min.js"></script>
+<script>
+    $(document).ready(function(e) {
+  $('img[usemap]').rwdImageMaps();
+  // do something here
+  $('area').on('click', function() {
+    alert($(this).attr('alt') + ' clicked');
+  });
+});
+</script>
+    <style>
+        img{
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            aspect-ratio: initial;
+        }
+        :focus-visible {
+    outline-color: blue;
+    }
+
     </style>
 </head>
 <body>
-    <div style="height: 100px; width: 100px; background-color: aliceblue;" onclick="zoom()">ZAA</div>
-</div>
-<div style="display:none; height: 50px; width: 50px; background-color: blue;" id="blank" class="zoom">
-    <input type="text" name="" id="">
-</div>
-<script>
-    function zoom(){
-    var x = document.getElementById("blank");
-    if (x.style.display == "none") {
-        x.style.display = "block";
-        //  location.href ='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-    } else{
-        x.style.display = "none";
-    }
-}
+    <img src="map.png" alt="map" usemap="#sefton" id="sefton">
+    <map name="sefton">
+        <area
+        shape="poly"
+        coords="0,200, 50,180, 200,390, 90,420"
+        alt="D Block"
+        href="#"/>
+        <area
+        shape="poly"
+        coords="100,180, 320,120, 410, 235, 150,300"
+        alt="Recreation area"
+        href="#"/>
+        <area
+        shape="poly"
+        coords="180,300, 500,215, 545,300, 230,390"
+        alt="C Block"
+        href="#"/>
+        <area
+        shape="poly"
+        coords="410,130, 480,120, 510,145, 440,160"
+        alt="G Block"
+        href="#"/>
+        <area
+        shape="poly"
+        coords="470,155, 710,90, 765,140, 760,170, 530,230"
+        alt="E Block"
+        href="#"/>
 </script>
 </body>
 </html>

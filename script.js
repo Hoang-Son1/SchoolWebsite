@@ -89,7 +89,6 @@ function tools4(){
 function tools5(){
     location.href ='https://chatgpt.com/'
 }
-
 function vid1(){
     location.href ='https://www.youtube.com/watch?v=c3OQd_t-ecA'
 }
@@ -104,4 +103,156 @@ function vid4(){
 }
 function vid5(){
     location.href ='https://www.youtube.com/watch?v=JdFRjsEZrmU'
+}
+
+
+function map1(){
+    var x = document.getElementById("map1");
+    var y = document.getElementById("map111");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+    if (y.style.display == "flex"){
+        y.style.display = "none";
+    } else{
+        y.style.display = "flex";
+    }
+}
+function map2(){
+    var x = document.getElementById("map2");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map3(){
+    var x = document.getElementById("map3");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map4(){
+    var x = document.getElementById("map4");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map5(){
+    var x = document.getElementById("map5");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map6(){
+    var x = document.getElementById("map6");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map7(){
+    var x = document.getElementById("map7");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map8(){
+    var x = document.getElementById("map8");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map9(){
+    var x = document.getElementById("map9");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map10(){
+    var x = document.getElementById("map10");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map11(){
+    var x = document.getElementById("map11");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map12(){
+    var x = document.getElementById("map12");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map13(){
+    var x = document.getElementById("map13");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function map14(){
+    var x = document.getElementById("map14");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img1(){
+    var x = document.getElementById("img1");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img6a(){
+    var x = document.getElementById("img6a");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img6b(){
+    var x = document.getElementById("img6b");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function stair(){
+    var x = document.getElementById("stair");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
 }

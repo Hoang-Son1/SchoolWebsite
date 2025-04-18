@@ -15,6 +15,12 @@ html, body{
     background-attachment: fixed;
     background-blend-mode: normal;
     scroll-behavior: smooth;
+    font-size: 1.75vmin;
+}
+@media screen and (max-width: 600px){
+    html, body{
+        font-size: 2.5vmin;
+    }
 }
 /* Nav bar start */
 @media screen and (max-width: 280px){
@@ -84,6 +90,7 @@ html, body{
         flex-direction: row;
         flex-wrap: wrap;
         padding: 1%;
+        z-index: 2;
         /* position: fixed; */
         /* padding: 0.5% 0.5% 0% 0.5%; */
     }
@@ -142,7 +149,7 @@ html, body{
         min-width: calc(100vw / 20 - 10px);
         background-color: white;
         padding: 5px;
-        z-index: 1;
+        z-index: 2;
         animation: appear 0.5s;
     }
     #f{
@@ -210,11 +217,11 @@ html, body{
     padding: 0% 5%;
     flex-wrap: wrap;
     box-sizing: border-box;
-    row-gap: 15vh;
+    row-gap: 10vh;
+    z-index: 0;
 }
 @media screen and (max-width: 1000px){
     .body{
-        flex-direction: column!important;
         padding: 0 10px!important;
     }
     .timetable{
@@ -225,7 +232,7 @@ html, body{
 @media screen and (max-width: 650px){
     .timetable{
         width: 100%!important;
-        margin-top: 10%!important;
+        margin-top: 5%!important;
     }
     .timetable p{
         font-size: 4vmin!important;
@@ -356,6 +363,7 @@ html, body{
     flex-direction: row;
     border: 5px solid black;
     animation: appear 0.5s;
+    z-index: 3;
     /* opacity: 85%; */
 }
 @keyframes appear{
@@ -412,6 +420,10 @@ html, body{
     word-break: break-word;
 }
 @media screen and (max-width: 650px){
+    .zoom{
+        height: 70%;
+        width: 90%;
+    }
     .zoom textarea{
         font-size: 8vmin!important;
     }
@@ -590,15 +602,6 @@ html, body{
     aspect-ratio: 1;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
 .entertainment{
     height: fit-content;
     width: 100%;
@@ -683,20 +686,6 @@ html, body{
     aspect-ratio: 1;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 705px){
     .videos{
         width: 100%!important;
@@ -769,30 +758,17 @@ html, body{
     aspect-ratio: 1;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1000px){
-    .map{
-        width: 100%!important;
-    }
-}
 .map{
     height: fit-content;
     width: 95%;
     background-color: #F5F5F7;
-    opacity: 90%;
-    box-sizing: border-box;
+    opacity: 100%;
+    /* box-sizing: border-box; */
     z-index: 0;
     border-radius: 25px;
     word-break: break-word;
     hyphens: auto!important;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 }
 .map1{
     height: fit-content;
@@ -830,14 +806,807 @@ html, body{
 .map2 img{
     object-fit: cover;
     width: 80%;
-    /* AA */
 }
+.map2 a:hover{
+    cursor: pointer;
+}
+#Dblock{
+    position: absolute; 
+    left: 10%; 
+    top: 12%; 
+    width: 15%; 
+    height: 40%; 
+    background-color: #B22222;
+    opacity: 60%;
+    mask-image: url(image/map/dblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 88%; 
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#DblockD:hover + #Dblock{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#DblockD{
+    position: absolute; 
+    left: 8.5%; 
+    top: 29%; 
+    width: 13.75%; 
+    height: 8%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 57.5deg;
+    border-radius: 50px;
+    z-index: 3;
+    color: transparent;
+}
+#Recarea{
+    position: absolute; 
+    left: 14%; 
+    top: 4%; 
+    width: 30%; 
+    height: 30%; 
+    background-color: #2E7D32;
+    opacity: 60%;
+    mask-image: url(image/map/recarea.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 80%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#RecareaR:hover + #Recarea{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#RecareaR{
+    position: absolute; 
+    left: 18.5%; 
+    top: 10%; 
+    width: 16%; 
+    height: 18%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 341deg;
+    border-radius: 50px;
+    z-index: 3;
+    color: transparent;
+}
+#Cblock{
+    position: absolute;
+    left: 19%; 
+    top: 17%; 
+    width: 40%; 
+    height: 30%;
+    background-color: #CD5C5C;
+    opacity: 60%;
+    mask-image: url(image/map/cblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: contain;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#CblockC:hover + #Cblock{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#CblockC{
+    position: absolute; 
+    left: 20%; 
+    top: 28%; 
+    width: 17%; 
+    height: 10%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 345deg;
+    border-radius: 50px;
+    z-index: 3;
+    color: transparent;
+}
+#Gblock{
+    position: absolute; 
+    left: 29.5%; 
+    top: 7%; 
+    width: 10%; 
+    height: 15%; 
+    background-color: #AD1457;
+    opacity: 60%;
+    mask-image: url(image/map/gblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 100%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#GblockG:hover + #Gblock{
+    transform: scale(3);
+    opacity: 80%;
+    z-index: 2;
+}
+#GblockG{
+    position: absolute; 
+    left: 34%; 
+    top: 10.5%; 
+    width: 5%; 
+    height: 8%; 
+    /* background-color: red; */
+    opacity: 40%;
+    /* rotate: 69deg; */
+    border-radius: 50px;
+    z-index: 3;
+    color: transparent;
+}
+#Eblock{
+    position: absolute; 
+    left: 31.5%; 
+    top: 8%; 
+    width: 30%; 
+    height: 20%; 
+    background-color: #F57C00;
+    opacity: 50%;
+    mask-image: url(image/map/eblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: contain;  
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#EblockE:hover + #Eblock{
+    transform: scale(1.15);
+    opacity: 70%;
+    z-index: 2;
+}
+#EblockE{
+    position: absolute; 
+    left: 35.5%; 
+    top: 13%; 
+    width: 16%; 
+    height: 9%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 344deg;
+    border-radius: 50px;
+    z-index: 3;
+    color: transparent;
+}
+#Fblock{
+    position: absolute; 
+    left: 50.25%; 
+    top: 6%; 
+    width: 20%; 
+    height: 40%; 
+    background-color: #6A1B9A;
+    opacity: 60%;
+    mask-image: url(image/map/fblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 100%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#FblockF:hover + #Fblock{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#FblockF{
+    position: absolute; 
+    left: 50.5%; 
+    top: 19%; 
+    width: 20%; 
+    height: 9%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 30deg;
+    z-index: 3;
+    color: transparent;
+}
+#Ablock{
+    position: absolute;
+    left: 37%; 
+    top: 28%; 
+    width: 30%; 
+    height: 30%; 
+    background-color: #db1111;
+    opacity: 50%;
+    mask-image: url(image/map/ablock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: contain;
+    mask-size: 150%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#AblockA:hover + #Ablock{
+    transform: scale(1.15);
+    opacity: 70%;
+    z-index: 2;
+}
+#AblockA{
+    position: absolute;
+    left: 42%; 
+    top: 35.5%; 
+    width: 24%; 
+    height: 12%; 
+    /* background-color: red; */
+    rotate: 342deg;
+    border-radius: 50px;
+    opacity: 40%;
+    z-index: 3;
+    color: transparent;
+}
+#Bblock{
+    position: absolute; 
+    left: 29.5%; 
+    top: 38%; 
+    width: 20%; 
+    height: 30%; 
+    background-color: #00838F;
+    opacity: 60%;
+    mask-image: url(image/map/bblock.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: contain;
+    mask-size: 95%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#BblockB:hover + #Bblock{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#BblockB{
+    position: absolute; 
+    left: 30%; 
+    top: 43%; 
+    width: 15%; 
+    height: 23%; 
+    /* background-color: red; */
+    border-radius: 25px;
+    /* rotate: 50deg;  */
+    opacity: 40%;
+    z-index: 3;
+    color: transparent;
+}
+#Quad{
+    position: absolute; 
+    left: 32%; 
+    top: 15.5%; 
+    width: 30%; 
+    height: 60%; 
+    background-color: #0022ff;
+    opacity: 40%;
+    mask-image: url(image/map/quad.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 100%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#QuadQ:hover + #Quad{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#QuadQ{
+    position: absolute; 
+    left: 37%; 
+    top: 22%; 
+    width: 19%; 
+    height: 16%; 
+    /* background-color: red; */
+    border-radius: 25px;
+    rotate: 340deg; 
+    opacity: 40%;
+    z-index: 3;
+    color: transparent;
+}
+#Oval{
+    position: absolute; 
+    left: 44%; 
+    top: 35.5%; 
+    width: 50%; 
+    height: 63%; 
+    background-color: #2E7D32;
+    opacity: 50%;
+    mask-image: url(image/map/oval.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: contain;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#OvalO:hover + #Oval{
+    transform: scale(1.15);
+    opacity: 70%;
+    z-index: 2;
+}
+#OvalO{
+    display: flex;
+    position: absolute; 
+    left: 52%; 
+    top: 43%; 
+    width: 31%; 
+    height: 43%; 
+    /* background-color: blue; */
+    border-radius: 25px;
+    rotate: 325deg; 
+    z-index: 3;
+}
+#Parking{
+    position: absolute; 
+    left: 10%; 
+    top: 40%; 
+    width: 20%; 
+    height: 30%; 
+    background-color: #bde810;
+    opacity: 40%;
+    mask-image: url(image/map/parking.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 95%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#ParkingP:hover + #Parking{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#ParkingP{
+    position: absolute; 
+    left: 16%; 
+    top: 46%; 
+    width: 10%; 
+    height: 12%; 
+    /* background-color: red; */
+    opacity: 40%;
+    rotate: 340deg;
+    border-radius: 25%;
+    z-index: 3;
+    color: transparent;
+}
+#Frontgate{
+    position: absolute; 
+    left: 10%; 
+    top: 49%; 
+    width: 10%; 
+    height: 20%; 
+    background-color: #7B1FA2;
+    opacity: 40%;
+    mask-image: url(image/map/frontgate.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 80%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#FrontgateF:hover + #Frontgate{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#FrontgateF{
+    position: absolute; 
+    left: 10%; 
+    top: 52%; 
+    width: 5%; 
+    height: 11%; 
+    /* background-color: red; */
+    opacity: 40%;
+    z-index: 3;
+    color: transparent;
+}
+#Sidegate{
+    position: absolute; 
+    left: 47%; 
+    top: 80%; 
+    width: 20%; 
+    height: 20%; 
+    background-color: #283593;
+    opacity: 40%;
+    mask-image: url(image/map/sidegate.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 70%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#SidegateS:hover + #Sidegate{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#SidegateS{
+    position: absolute; 
+    left: 50%; 
+    top: 87%; 
+    width: 8%; 
+    height: 11%; 
+    rotate: 50deg;
+    /* background-color: red; */
+    opacity: 40%;
+    border-radius: 0% 0% 50% 0%;
+    z-index: 3;
+    color: transparent;
+}
+#Basketballcourt{
+    position: absolute; 
+    left: 18.5%; 
+    top: 45%; 
+    width: 50%; 
+    height: 55%;
+    background-color: #db8711;
+    opacity: 40%;
+    mask-image: url(image/map/basketballcourt.png);
+    mask-repeat: no-repeat;
+    mask-position: absolute;
+    mask-size: 75%;
+    transition: transform 0.25s;
+    z-index: 1;
+}
+#BasketballcourtB:hover + #Basketballcourt{
+    transform: scale(1.15);
+    opacity: 80%;
+    z-index: 2;
+}
+#BasketballcourtB{
+    position: absolute; 
+    left: 22%; 
+    top: 70%; 
+    width: 30%; 
+    height: 20%; 
+    rotate: 25deg;
+    /* background-color: red; */
+    opacity: 40%;
+    z-index: 3;
+    color: transparent;
+}
+#DblockD:hover, #GblockG:hover, #ParkingP:hover, #FrontgateF:hover, #SidegateS:hover{
+    display: flex;
+    color: white;
+    font-size: 1.75em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 80%;
+    transition: 0.5s;
+}
+#RecareaR:hover, #CblockC:hover, #EblockE:hover, #FblockF:hover, #AblockA:hover, #BblockB:hover, #QuadQ:hover, #OvalO:hover, #BasketballcourtB:hover{
+    display: flex;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: normal;
+    line-height: 0.9;
+    opacity: 80%;
+    transition: 0.5s;
+}
+#DblockD, #GblockG, #ParkingP, #FrontgateF, #SidegateS{
+    font-size: 1.25em;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: normal;
+    line-height: 0.9;
+    opacity: 60%;
+}
+#RecareaR, #CblockC, #EblockE, #FblockF, #AblockA, #BblockB, #QuadQ, #OvalO, #BasketballcourtB{
+    font-size: 2.25em;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: normal;
+    line-height: 0.9;
+    opacity: 60%;
+}
+#OvalO{
+    font-size: 5em;
+}
+#OvalO:hover{
+    font-size: 8em;
+}
+#map1 img, #map3 img, #map5 img, #map6 img, #map7 img, #map8 img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+#map2 img, #map4 img, #map9 img, #map10 img, #map11 img, #map12 img, #map13 img, #map14 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1000px){
+    .bigmap{
+        /* margin-left: 3%!important; */
+        max-height: 80%!important;
+        aspect-ratio: 9/16!important;
+        width: auto!important;
+    }
+    #R1{
+        position: absolute;
+        left: 30%; 
+        top: 46.5%; 
+        width: 13%; 
+        height: 8%; 
+        background-color: red;
+        opacity: 40%;
+    }
+    #map2, #map4, #map9, #map10, #map11, #map12, #map13, #map14{
+        width: 90%;
+        height: 80%;
+    }
+    #R2{
+        position: absolute;
+        left: 14%; 
+        top: 45%; 
+        width: 7%; 
+        height: 5%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R3{
+        position: absolute;
+        left: 21%; 
+        top: 45%; 
+        width: 3%; 
+        height: 5%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R4{
+        position: absolute;
+        left: 42%; 
+        top: 45%; 
+        width: 11%; 
+        height: 5%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R5{
+        position: absolute;
+        left: 53.5%; 
+        top: 45%; 
+        width: 3%; 
+        height: 5%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #staffroom1{
+        height: fit-content;
+        width: fit-content;
+        max-width: 75%!important;
 
-
-
-
-
-
+    }
+}
+@media screen and (max-height: 600px){
+    .bigmap{
+        aspect-ratio: 16/9!important;
+    }
+    #R1{
+        position: absolute;
+        left: 35%; 
+        top: 41%; 
+        width: 10%; 
+        height: 20%; 
+        background-color: #7ed957;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R2{
+        position: absolute;
+        left: 22.5%; 
+        top: 38.5%; 
+        width: 5.5%; 
+        height: 11%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R3{
+        position: absolute;
+        left: 28%; 
+        top: 38.5%; 
+        width: 3%; 
+        height: 11%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R4{
+        position: absolute;
+        left: 44%; 
+        top: 38.5%; 
+        width: 8.2%; 
+        height: 11%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R5{
+        position: absolute;
+        left: 52.5%; 
+        top: 38.5%; 
+        width: 2.5%; 
+        height: 11%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+}
+@media screen and (min-width: 1000px){
+    #R1{
+        position: absolute;
+        left: 35%; 
+        top: 41%; 
+        width: 10%; 
+        height: 20%; 
+        background-color: #7ed957;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R2{
+        position: absolute;
+        left: 22.5%; 
+        top: 38.5%; 
+        width: 5.5%; 
+        height: 11%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R3{
+        position: absolute;
+        left: 28%; 
+        top: 38.5%; 
+        width: 3%; 
+        height: 11%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R4{
+        position: absolute;
+        left: 44%; 
+        top: 38.5%; 
+        width: 8.2%; 
+        height: 11%; 
+        background-color: #a9b5d3;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+    #R5{
+        position: absolute;
+        left: 52.5%; 
+        top: 38.5%; 
+        width: 2.5%; 
+        height: 11%; 
+        background-color: #0078d4;
+        opacity: 60%;
+        transition: transform 0.5s;
+    }
+}
+.arealink:hover{
+    transform: scale(1.35);
+}
+.map3 a:hover{
+    cursor: pointer;
+}
+.bigmap{
+    display: none;
+    /* height: 80%; */
+    aspect-ratio: 16/9;
+    /* padding-top: 56.25%; */
+    width: 80%;
+    background-color: #f0f4f8  ;
+    border-radius: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: auto;
+    flex-direction: row;
+    border: 5px solid black;
+    animation: appear 0.5s;
+    z-index: 5;
+}
+#img1 img, #img6a img, #img6b img, #stair img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+@keyframes appear{
+    from{
+        transform: translateY(-5vmin);
+        visibility: none;
+        opacity: 0;
+    }
+    to{
+        transform: translatey(0vw);
+        opacity: 1;
+    }
+}
+#staffroom1{
+    height: fit-content;
+    width: fit-content;
+    max-width: 35%;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    border-radius: 25px;
+    color: white;
+    background-color: #818284;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+#staffroom1 p{
+    font-size: 2em;
+}
+#staffroom1 a{
+    font-size: 0.75em!important;
+}
+#close{
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 4vmin;
+    transition: transform 0.25s;
+    border-radius: 50px;
+    color: white;
+    background-color: #818284;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#close:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+}
+.zoom p{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background-color: lightcoral;
+    padding: 3%;
+    margin: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    word-break: break-word;
+}
 /* Body end */
 /* Footer start */
 .footer{
@@ -850,3 +1619,6 @@ html, body{
     position: relative;
 }
 /* Footer end */
+/* :focus-visible {
+    outline-color: green;
+} */
