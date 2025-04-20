@@ -104,20 +104,12 @@ function vid4(){
 function vid5(){
     location.href ='https://www.youtube.com/watch?v=JdFRjsEZrmU'
 }
-
-
 function map1(){
     var x = document.getElementById("map1");
-    var y = document.getElementById("map111");
     if (x.style.display == "flex"){
         x.style.display = "none";
     } else{
         x.style.display = "flex";
-    }
-    if (y.style.display == "flex"){
-        y.style.display = "none";
-    } else{
-        y.style.display = "flex";
     }
 }
 function map2(){
@@ -250,6 +242,198 @@ function img6b(){
 }
 function stair(){
     var x = document.getElementById("stair");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img6c(){
+    var x = document.getElementById("img6c");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function stair2(){
+    var x = document.getElementById("stair2");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7a(){
+    var x = document.getElementById("img7a");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7b(){
+    var x = document.getElementById("img7b");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7c(){
+    var x = document.getElementById("img7c");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7d(){
+    var x = document.getElementById("img7d");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7e(){
+    var x = document.getElementById("img7e");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7f(){
+    var x = document.getElementById("img7f");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7g(){
+    var x = document.getElementById("img7g");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7h(){
+    var x = document.getElementById("img7h");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img7i(){
+    var x = document.getElementById("img7i");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function stair3(){
+    var x = document.getElementById("stair3");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3a(){
+    var x = document.getElementById("img3a");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3b(){
+    var x = document.getElementById("img3b");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3c(){
+    var x = document.getElementById("img3c");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3d(){
+    var x = document.getElementById("img3d");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3e(){
+    var x = document.getElementById("img3e");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img3f(){
+    var x = document.getElementById("img3f");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img5a(){
+    var x = document.getElementById("img5a");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img5b(){
+    var x = document.getElementById("img5b");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function stair4(){
+    var x = document.getElementById("stair4");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img5c(){
+    var x = document.getElementById("img5c");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img5d(){
+    var x = document.getElementById("img5d");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function img5e(){
+    var x = document.getElementById("img5e");
     if (x.style.display == "flex"){
         x.style.display = "none";
     } else{
