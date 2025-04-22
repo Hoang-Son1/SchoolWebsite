@@ -10,6 +10,249 @@
 function logo(){
     location.href ='#body'
 }
+function back(){
+    var A = document.getElementById("Jan");
+    var a = document.getElementById("january");
+    var B = document.getElementById("Feb");
+    var b = document.getElementById("february");
+    var C = document.getElementById("Mar");
+    var c = document.getElementById("march");
+    var D = document.getElementById("Apr");
+    var d = document.getElementById("april");
+    var E = document.getElementById("May");
+    var e = document.getElementById("may");
+    var F = document.getElementById("Jun");
+    var f = document.getElementById("june");
+    var G = document.getElementById("Jul");
+    var g = document.getElementById("july");
+    var H = document.getElementById("Aug");
+    var h = document.getElementById("august");
+    var I = document.getElementById("Sep");
+    var i = document.getElementById("september");
+    var J = document.getElementById("Oct");
+    var j = document.getElementById("october");
+    var K = document.getElementById("Nov");
+    var k = document.getElementById("november");
+    var L = document.getElementById("Dec");
+    var l = document.getElementById("december");
+
+    if (getComputedStyle(A).display === "block"){
+        A.style.display = "none";
+        L.style.display = "block";
+        a.style.display = "none";
+        l.style.display = "block";
+        return
+    }
+    if (getComputedStyle(B).display === "block"){
+        B.style.display = "none";
+        A.style.display = "block";
+        b.style.display = "none";
+        a.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(C).display === "block"){
+        C.style.display = "none";
+        B.style.display = "block";
+        c.style.display = "none";
+        b.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(D).display === "block"){
+        D.style.display = "none";
+        C.style.display = "block";
+        d.style.display = "none";
+        c.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(E).display === "block"){
+        E.style.display = "none";
+        D.style.display = "block";
+        e.style.display = "none";
+        d.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(F).display === "block"){
+        F.style.display = "none";
+        E.style.display = "block";
+        f.style.display = "none";
+        e.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(G).display === "block"){
+        G.style.display = "none";
+        F.style.display = "block";
+        g.style.display = "none";
+        f.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(H).display === "block"){
+        H.style.display = "none";
+        G.style.display = "block";
+        h.style.display = "none";
+        g.style.display = "block";
+    }
+
+    if (getComputedStyle(I).display === "block"){
+        I.style.display = "none";
+        H.style.display = "block";
+        i.style.display = "none";
+        h.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(J).display === "block"){
+        J.style.display = "none";
+        I.style.display = "block";
+        j.style.display = "none";
+        i.style.display = "block";
+        return
+        }    
+
+    if (getComputedStyle(K).display === "block"){
+        K.style.display = "none";
+        J.style.display = "block";
+        k.style.display = "none";
+        j.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(L).display === "block"){
+        L.style.display = "none";
+        K.style.display = "block";
+        l.style.display = "none";
+        k.style.display = "block";
+        return
+    }
+
+}
+function next(){
+    var A = document.getElementById("Jan");
+    var a = document.getElementById("january");
+    var B = document.getElementById("Feb");
+    var b = document.getElementById("february");
+    var C = document.getElementById("Mar");
+    var c = document.getElementById("march");
+    var D = document.getElementById("Apr");
+    var d = document.getElementById("april");
+    var E = document.getElementById("May");
+    var e = document.getElementById("may");
+    var F = document.getElementById("Jun");
+    var f = document.getElementById("june");
+    var G = document.getElementById("Jul");
+    var g = document.getElementById("july");
+    var H = document.getElementById("Aug");
+    var h = document.getElementById("august");
+    var I = document.getElementById("Sep");
+    var i = document.getElementById("september");
+    var J = document.getElementById("Oct");
+    var j = document.getElementById("october");
+    var K = document.getElementById("Nov");
+    var k = document.getElementById("november");
+    var L = document.getElementById("Dec");
+    var l = document.getElementById("december");
+
+    if (getComputedStyle(A).display === "block"){
+        A.style.display = "none";
+        B.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(B).display === "block"){
+        B.style.display = "none";
+        C.style.display = "block";
+        b.style.display = "none";
+        c.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(C).display === "block"){
+        C.style.display = "none";
+        D.style.display = "block";
+        c.style.display = "none";
+        d.style.display = "block";
+        return
+    }   
+
+    if (getComputedStyle(D).display === "block"){
+        D.style.display = "none";
+        E.style.display = "block";
+        d.style.display = "none";
+        e.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(E).display === "block"){
+        E.style.display = "none";
+        F.style.display = "block"
+        e.style.display = "none";
+        f.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(F).display === "block"){
+        F.style.display = "none";
+        G.style.display = "block"
+        f.style.display = "none";
+        g.style.display = "block";
+        return
+    }
+    
+    if (getComputedStyle(G).display === "block"){
+        G.style.display = "none";
+        H.style.display = "block"
+        g.style.display = "none";
+        h.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(H).display === "block"){
+        H.style.display = "none";
+        I.style.display = "block"
+        h.style.display = "none";
+        i.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(I).display === "block"){
+        I.style.display = "none";
+        J.style.display = "block"
+        i.style.display = "none";
+        j.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(J).display === "block"){
+        J.style.display = "none";
+        K.style.display = "block"
+        j.style.display = "none";
+        k.style.display = "block";
+        return
+    }
+
+    if (getComputedStyle(K).display === "block"){
+        K.style.display = "none";
+        L.style.display = "block"
+        k.style.display = "none";
+        l.style.display = "block";
+        return
+    }
+    if (getComputedStyle(L).display === "block"){
+        L.style.display = "none";
+        A.style.display = "block"
+        l.style.display = "none";
+        a.style.display = "block";
+        return
+    }
+
+}
 function zoom(){
     var x = document.getElementById("blank");
     if (x.style.display == "flex"){
@@ -74,35 +317,37 @@ function zoom8(){
         x.style.display = "flex";
     }
 }
-function tools1(){
-    location.href ='https://education.nsw.gov.au/'
+function zoom9(){
+    var x = document.getElementById("blank9");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
 }
-function tools2(){
-    location.href ='https://learn.getatomi.com/'
+function zoom10(){
+    var x = document.getElementById("blank10");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
 }
-function tools3(){
-    location.href ='https://quizlet.com/'
+function zoom11(){
+    var x = document.getElementById("blank11");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
 }
-function tools4(){
-    location.href ='https://kahoot.com/'
-}
-function tools5(){
-    location.href ='https://chatgpt.com/'
-}
-function vid1(){
-    location.href ='https://www.youtube.com/watch?v=c3OQd_t-ecA'
-}
-function vid2(){
-    location.href ='https://www.youtube.com/watch?v=w9yyf_KVwuA'
-}
-function vid3(){
-    location.href ='https://www.youtube.com/watch?v=lnEMYPdUWkE'
-}
-function vid4(){
-    location.href ='https://www.youtube.com/watch?v=0b8fA7Z8CJc'
-}
-function vid5(){
-    location.href ='https://www.youtube.com/watch?v=JdFRjsEZrmU'
+function zoom12(){
+    var x = document.getElementById("blank12");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
 }
 function map1(){
     var x = document.getElementById("map1");

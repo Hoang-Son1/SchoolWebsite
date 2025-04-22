@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentportal.css">
+    <link rel="icon" href="image/nav/sefton logo.png">
+    <script src="studentportal.js"></script>
+    <title>Sefton</title>
+</head>
+<body>
+    <nav>
+        <div id="nav1" class="navpic">
+            <img onclick="logo()" src="image/nav/sefton logo.png" alt="Logo">
+        </div>
+        <div class="navto">
+            <div id="nav2" class="navlink">
+                <a href="#timetable">Calendar</a>
+            </div>
+            <div id="nav3" class="navlink">
+                <a href="#news">News</a>
+            </div>
+            <div id="nav4" class="navlink">
+                <a href="#library">Library</a>
+            </div>
+            <div id="nav5" class="navlink">
+                <a href="#entertainment">Resources</a>
+            </div>
+            <div id="nav8" class="navlink">
+                <a href="#map">School Diagram</a>                    
+            </div>
+        </div>
+        <div class="settings">
+            <div id="nav6" class="navpic">
+                <div class="navimg">
+                    <img src="image/nav/pic2.png" alt="language">
+                </div>
+                <div id="language">
+                    <a id="f">:</a>
+                    <a id="fk">Language:</a>
+                    <a id="reallan" href="">Korean</a>
+                    <a id="reallan" href="">English</a>
+                </div>
+            </div>
+            <div id="nav7" class="navpic">
+                <img src="image/nav/pic3.png" alt="pfp">
+            </div>
+        </div>
+    </nav>
+    <div class="body">
+        <div id="timetable" class="timetable">
+            <div class="date">      
+                <div onclick="back()" id="back" class="backandfourth">
+                    <p>&#10094;</p>
+                </div>
+                <div class="datetitle">
+                    <div id="month">
+                        <p id="Jan">January</p>
+                        <p id="Feb">February</p>
+                        <p id="Mar">March</p>
+                        <p id="Apr">April</p>
+                        <p id="May">May</p>
+                        <p id="Jun">June</p>
+                        <p id="Jul">July</p>
+                        <p id="Aug">August</p>
+                        <p id="Sep">September</p>
+                        <p id="Oct">October</p>
+                        <p id="Nov">November</p>
+                        <p id="Dec">December</p>
+                    </div>
+                    <div id="year">
+                        <p>2025</p>
+                    </div>
+                </div>
+                <div onclick="next()" id="forward" class="backandfourth"> 
+                    <p>&#10095;</p>
+                </div>
+            </div>
+            <div class="weekday">
+                <p>Mon</p>
+                <p>Tue</p>
+                <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+            </div>
+            <div id="january" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="february" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                   
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="march" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom2()" class="task">7 
+                        <br> <span>Jennie</span>
+                    </p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom3()" class="task">14 
+                        <br> <span>Le sserafim</span>
+                    </p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom5()" class="task">17 
+                        <br> <span>NMIXX</span>
+                    </p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom6()" class="task">23 
+                        <br> <span>NJZ</span>
+                    </p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom7()" class="exam">24 
+                        <br> <span>BST exam</span>
+                    </p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom8()" class="exam">27 
+                        <br> <span>Math Adv exam</span>
+                    </p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>                  
+                    <p class="empty"></p>                 
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="april" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()" >11</p>
+                    <p onclick="zoom()" class="task">12
+                        <br> <span>Start school holiday</span>
+                    </p>
+                    <p onclick="zoom()">13</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom4()" id="today">21
+                        <br> <span>Today</span>
+                    </p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()" class="task">29
+                        <br> <span>End school holiday</span>
+                    </p>
+                    <p onclick="zoom9()" class="exam">30
+                        <br> <span>English exam</span>
+                    </p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="may" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom12()" class="task">1
+                        <br> Cross Country
+                    </p>
+                    <p onclick="zoom10()" class="exam">2
+                        <br> <span>VD Exam</span> 
+                    </p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom11()" class="exam">5
+                        <br> <span>EC exam</span>
+                    </p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="june" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">30</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="july" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="august" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                </div>
+            </div>
+            <div id="september" class="day">
+                <div class="week">
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="october" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="november" class="day">
+                <div class="week">
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                </div>
+            </div>
+            <div id="december" class="day">
+                <div class="week">
+                    <p onclick="zoom()">1</p>
+                    <p onclick="zoom()">2</p>
+                    <p onclick="zoom()">3</p>
+                    <p onclick="zoom()">4</p>
+                    <p onclick="zoom()">5</p>
+                    <p onclick="zoom()">6</p>
+                    <p onclick="zoom()">7</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">8</p>
+                    <p onclick="zoom()">9</p>
+                    <p onclick="zoom()">10</p>
+                    <p onclick="zoom()">11</p>
+                    <p onclick="zoom()">12</p>
+                    <p onclick="zoom()">13</p>
+                    <p onclick="zoom()">14</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">15</p>
+                    <p onclick="zoom()">16</p>
+                    <p onclick="zoom()">17</p>
+                    <p onclick="zoom()">18</p>
+                    <p onclick="zoom()">19</p>
+                    <p onclick="zoom()">20</p>
+                    <p onclick="zoom()">21</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">22</p>
+                    <p onclick="zoom()">23</p>
+                    <p onclick="zoom()">24</p>
+                    <p onclick="zoom()">25</p>
+                    <p onclick="zoom()">26</p>
+                    <p onclick="zoom()">27</p>
+                    <p onclick="zoom()">28</p>
+                </div>
+                <div class="week">
+                    <p onclick="zoom()">29</p>
+                    <p onclick="zoom()">30</p>
+                    <p onclick="zoom()">31</p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                    <p class="empty"></p>
+                </div>
+            </div>
+            <div id="blank" class="zoom">
+                <div id="taskinput">
+                    <textarea placeholder="Type your task in here to keep you organised"></textarea>
+                </div>
+                <div onclick="zoom()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank2" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://www.jenn.ie/">Jennie's 1st studio album "Ruby" coming out 12AM KST</a></p>
+                </div>
+                <div onclick="zoom2()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank3" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://le-sserafim.lnk.to/HOT">Le sserafim's 5th mini album "Hot" coming out 1PM KST</a></p>                
+                </div>    
+                <div onclick="zoom3()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank4" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Math, Business Studies and Physics homework due today</a></p>
+                </div>
+                <div onclick="zoom4()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank5" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://nmixx.lnk.to/Fe3O4FORWARD">NMIXX's 4th extended playlist "Fe3O4: FORWARD" coming out 6PM EST</a></p>
+                </div>
+                <div onclick="zoom5()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank6" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://www.instagram.com/njz_official/">NJZ performing new music at COMPLEXCON HongKong</a></p>
+                </div>
+                <div onclick="zoom6()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank7" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Business Studies exam</a></p>
+                </div>
+                <div onclick="zoom7()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank8" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Math Advanced exam</a></p>
+                </div>
+                <div onclick="zoom8()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank9" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">English exam</a></p>
+                </div>
+                <div onclick="zoom9()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank10" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Visual Design Assignment due date</a></p>
+                </div>
+                <div onclick="zoom10()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank11" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://classroom.google.com">Enterprise Computing Assignment due date</a></p>
+                </div>
+                <div onclick="zoom11()" id="taskclose">&#10006;</div>
+            </div>
+            <div id="blank12" class="zoom">
+                <div id="taskinput">
+                    <p><a href="https://maps.app.goo.gl/fM4spE8tEQvyByBk8">Cross Country</a></p>
+                </div>
+                <div onclick="zoom12()" id="taskclose">&#10006;</div>
+            </div>
+        </div>
+        <div id="news" class="news">
+            <div class="news1">
+                <div class="news1a">
+                    <p>School news</p>
+                </div>
+                <div class="news1b">
+                    <a href="#">More</a>
+                </div>
+            </div>
+            <div class="news2">
+                <div class="article">
+                    <div class="article1">
+                        <img src="image/news/news1.jpg" alt="News1">
+                    </div>
+                    <div class="article1">
+                        <p>Applications are open to join the 2025 Minister’s Student Council (DOVES)</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article1">
+                        <img src="image/news/news2.jpg" alt="News2">
+                    </div>
+                    <div class="article1">
+                        <p>Apply now for 2025 HSC disability provisions</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article1">
+                        <img src="image/news/news3.jpg" alt="News3">
+                    </div>
+                    <div class="article1">
+                        <p>The best education money can’t buy</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article1">
+                        <img src="image/news/news4.jpg" alt="News4">
+                    </div>
+                    <div class="article1">
+                        <p>Every day matters</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="article1">
+                        <img src="image/news/news5.jpg" alt="News5">
+                    </div>
+                    <div class="article1b">
+                        <p>Back to school webinar for parents and carers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="library" class="library">
+            <div class="library1">
+                <div class="library1a">
+                    <p>Library</p>
+                </div>
+                <div class="library1b">
+                    <a href="library.html">More</a>
+                </div>
+            </div>
+            <div class="library2">
+                <div class="book">
+                    <a href="image/library/library1.jpg" download>
+                        <div class="book1">
+                            <img src="image/library/library1.jpg" alt="Library1">
+                        </div>
+                        <div class="book1">
+                            <p>NEW SENIOR MATHEMATICS ADVANCED</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="image/library/library2.jpg" download>
+                        <div class="book1">
+                            <img src="image/library/library2.jpg" alt="Library2">
+                        </div>
+                        <div class="book1">
+                            <p>NEW SENIOR MATHEMATICS EXTENSION 1</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="image/library/library3.jpg" download>
+                        <div class="book1">
+                            <img src="image/library/library3.jpg" alt="Library3">
+                        </div>
+                        <div class="book1">
+                            <p>BUSINESS STUDIES IN ACTION</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="image/library/library4.jpg" download>
+                        <div class="book1">
+                            <img src="image/library/library4.jpg" alt="Library4">
+                        </div>
+                        <div class="book1">
+                            <p>KOREAN FOR DUMMIES</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="image/library/library5.jpg" download>
+                        <div class="book1">
+                            <img src="image/library/library5.jpg" alt="Library5">
+                        </div>
+                        <div class="book1">
+                            <p>INFORMATION PROCESSES AND TECHNOLOGY</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="entertainment" class="entertainment">
+            <div class="tools">
+                <div class="tools1">
+                    <div class="tools1a">
+                        <p>Tools</p>
+                    </div>
+                    <div class="tools1b">
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="tools2">
+                    <div class="tool">
+                        <a href="https://education.nsw.gov.au/">
+                            <div class="tool1">
+                                <img src="image/tools/tools1.jpg" alt="Tool1">
+                            </div>
+                            <div class="tool1">
+                                <p>DoE</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tool">
+                        <a href="https://learn.getatomi.com/">
+                            <div class="tool1">
+                                <img src="image/tools/tools2.jpg" alt="Tool2">
+                            </div>
+                            <div class="tool1">
+                                <p>Atomi</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tool">
+                        <a href="https://quizlet.com/">
+                            <div class="tool1">
+                                <img src="image/tools/tools3.jpg" alt="Tool3">
+                            </div>
+                            <div class="tool1">
+                                <p>Quizlet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tool">
+                        <a href="https://kahoot.com/">
+                            <div class="tool1">
+                                <img src="image/tools/tools4.jpg" alt="Tool4">
+                            </div>
+                            <div class="tool1">
+                                <p>Kahoot</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tool">
+                        <a href="https://chatgpt.com/">
+                            <div class="tool1">
+                                <img src="image/tools/tools5.jpg" alt="Tool5">
+                            </div>
+                            <div class="tool1">
+                                <p>ChatGPT</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="videos">
+                
+                <div class="videos1">
+                    <div class="videos1a">
+                        <p>Videos</p>
+                    </div>
+                    <div class="videos1b">
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="videos2">
+                    <div class="vid">
+                        <a href="https://www.youtube.com/watch?v=c3OQd_t-ecA">
+                            <div class="vid1">
+                                <img src="image/vid/vid1.jpg" alt="Video1">
+                            </div>
+                            <div class="vid1">
+                                <p>Trapezoidal Rule Video 1</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vid">
+                        <a href="https://www.youtube.com/watch?v=w9yyf_KVwuA">
+                            <div class="vid1">
+                                <img src="image/vid/vid2.jpg" alt="Video2">
+                            </div>
+                            <div class="vid1">
+                                <p>CDF to find Quantiles</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vid">
+                        <a href="https://www.youtube.com/watch?v=lnEMYPdUWkE">
+                            <div class="vid1">
+                                <img src="image/vid/vid3.jpg" alt="Video3">
+                            </div>
+                            <div class="vid1">
+                                <p>How to actually get a *high* ATAR</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vid">
+                        <a href="https://www.youtube.com/watch?v=0b8fA7Z8CJc">
+                            <div class="vid1">
+                                <img src="image/vid/vid4.jpg" alt="Video4">
+                            </div>
+                            <div class="vid1">
+                                <p>16 CRAZY SCIENCE EXPERIMENTS</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="vid">
+                        <a href="https://www.youtube.com/watch?v=JdFRjsEZrmU">
+                            <div class="vid1">
+                                <img src="image/vid/vid5.jpg" alt="Video5">
+                            </div>
+                            <div class="vid1">
+                                <p>Acid vs Lava- Testing Liquids That Melt Everything</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map">
+            <div class="map1">
+                <div class="map1a">
+                    <p>School Diagram</p>
+                </div>
+            </div>
+            <div class="map2" style="position: relative;">
+                <img src="image/map/map.png" alt="map">
+                    <a onclick="map1()" id="DblockD">D block</a>
+                    <div id="Dblock"></div>
+                    <a onclick="map2()" id="RecareaR">Rec area</a>                    
+                    <div id="Recarea"></div>
+                    <a onclick="map3()" id="CblockC">C block</a>                    
+                    <div id="Cblock"></div>
+                    <a onclick="map4()" id="GblockG">G block</a>
+                    <div id="Gblock"></div>
+                    <a onclick="map5()" id="EblockE">E block</a>
+                    <div id="Eblock"></div>
+                    <a onclick="map6()" id="FblockF">F block</a>
+                    <div id="Fblock"></div>
+                    <a onclick="map7()" id="AblockA">A block</a>
+                    <div id="Ablock"></div>
+                    <a onclick="map8()" id="BblockB">B block</a>
+                    <div id="Bblock"></div>
+                    <a onclick="map9()" id="QuadQ">Quad</a>
+                    <div id="Quad"></div>
+                    <a onclick="map10()" id="OvalO">Oval</a>
+                    <div id="Oval"></div>
+                    <a onclick="map11()" id="ParkingP">Parking</a>
+                    <div id="Parking"></div>
+                    <a onclick="map12()" id="FrontgateF">Front gate</a>
+                    <div id="Frontgate"></div>
+                    <a onclick="map13()" id="SidegateS">Side gate</a>
+                    <div id="Sidegate"></div>
+                    <a onclick="map14()" id="BasketballcourtB">Basketball court</a>
+                    <div id="Basketballcourt"></div>
+            </div>
+            <div class="map3">
+                <div id="map1" class="bigmap">
+                    <img src="image/map/D Block.png" alt="D block">
+                    <a onclick="img1()" class="arealink" id="R1"></a>
+                    <div onclick="map1()" id="close">&#10006;</div>
+                </div>
+                <div id="img1" class="bigmap">
+                    <img src="image/school/Computers.png" alt="Computer room">
+                    <div onclick="img1()" id="close">&#10006;</div>
+                </div>
+                <div id="map2" class="bigmap">
+                    <img src="image/school/Rec area.png" alt="Rec Area">
+                    <div onclick="map2()" id="close">&#10006;</div>
+                </div>
+                <div id="map3" class="bigmap">
+                    <img src="image/map/C Block.png" alt="C block">
+                    <div onclick="map3()" id="close">&#10006;</div>
+                    <a onclick="stair3()" class="arealink" id="R20"></a>
+                    <a onclick="img3a()" class="arealink" id="R21"></a>
+                    <a onclick="img3b()" class="arealink" id="R22"></a>
+                    <a onclick="img3c()" class="arealink" id="R23"></a>
+                    <a onclick="stair3()" class="arealink" id="R24"></a>
+                    <a onclick="img3d()" class="arealink" id="R25"></a>
+                    <a onclick="img3d()" class="arealink" id="R26"></a>
+                    <a onclick="img3e()" class="arealink" id="R27"></a>
+                    <a onclick="img3f()" class="arealink" id="R28"></a>
+                </div>
+                <div id="stair3" class="bigmap">
+                    <img src="image/school/Stair.png" alt="Stair">
+                    <div onclick="stair3()" id="close">&#10006;</div>
+                </div>
+                <div id="img3a" class="bigmap">
+                    <img src="image/school/Elavator.png" alt="Elavator">
+                    <div onclick="img3a()" id="close">&#10006;</div>
+                </div>
+                <div id="img3b" class="bigmap">
+                    <img src="image/school/C2 hallway.png" alt="C Block outside hallway">
+                    <div onclick="img3b()" id="close">&#10006;</div>
+                </div>
+                <div id="img3c" class="bigmap">
+                    <img src="image/school/C1 hallway.png" alt="C Block inside hallway">
+                    <div onclick="img3c()" id="close">&#10006;</div>
+                </div>
+                <div id="img3d" class="bigmap">
+                    <img src="image/school/Computers.png" alt="Computer room">
+                    <div onclick="img3d()" id="close">&#10006;</div>
+                </div>
+                <div id="img3e" class="bigmap">
+                    <img src="image/school/Library.png" alt="Library">
+                    <img src="image/school/Library2.png" alt="Library">
+                    <img src="image/school/Library3.png" alt="Library">
+                    <div onclick="img3e()" id="close">&#10006;</div>
+                </div>
+                <div id="img3f" class="bigmap">
+                    <img src="image/school/Administration.png" alt="Adninistration">
+                    <div onclick="img3f()" id="close">&#10006;</div>
+                </div>
+                <div id="map4" class="bigmap">
+                    <img src="image/school/Computers.png" alt="G block">
+                    <div onclick="map4()" id="close">&#10006;</div>
+                </div>
+                <div id="map5" class="bigmap">
+                    <img src="image/map/E Block.png" alt="E block">
+                    <a onclick="img5a()" class="arealink" id="R29"></a>
+                    <a onclick="img5b()" class="arealink" id="R30"></a>
+                    <a onclick="stair4()" class="arealink" id="R31"></a>
+                    <a onclick="stair4()" class="arealink" id="R32"></a>
+                    <a onclick="img5c()" class="arealink" id="R33"></a>
+                    <a onclick="stair4()" class="arealink" id="R34"></a>
+                    <a onclick="img5d()" class="arealink" id="R35"></a>
+                    <a onclick="img5e()" class="arealink" id="R36"></a>
+                    <div onclick="map5()" id="close">&#10006;</div>
+                </div>
+                <div id="img5a" class="bigmap">
+                    <img src="image/school/Science staffroom.png" alt="Science Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr G. Miller (Head teacher) <br>
+                            Mr A. Nguyen, Mr Sultan, Mr B. Atton, Mr Dang, Ms R. Lee, Ms R. Singh, Ms Badawi                            
+                        </p>
+                    </div>
+                    <div onclick="img5a()" id="close">&#10006;</div>
+                </div>
+                <div id="img5b" class="bigmap">
+                    <img src="image/school/Computers.png" alt="Computer room">
+                    <div onclick="img5b()" id="close">&#10006;</div>
+                </div>
+                <div id="stair4" class="bigmap">
+                    <img src="image/school/Stair.png" alt="Stair">
+                    <div onclick="stair4()" id="close">&#10006;</div>
+                </div>
+                <div id="img5c" class="bigmap">
+                    <img src="image/school/Math staffroom.png" alt="Math Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr/Ms Z. Najem (Head teacher) <br>
+                            Ms S. Abrams, Ms S. Khattar, Ms Truong, Ms Chung, Ms H. Summer, Ms Alizadah, Mr Nguyen, Mr Halliwell
+                        </p>
+                    </div>
+                    <div onclick="img5c()" id="close">&#10006;</div>
+                </div>
+                <div id="img5d" class="bigmap">
+                    <img src="image/school/E16.png" alt="E16">
+                    <div onclick="img5d()" id="close">&#10006;</div>
+                </div>
+                <div id="img5e" class="bigmap">
+                    <img src="image/school/E hallway.png" alt="E block hallway">
+                    <div onclick="img5e()" id="close">&#10006;</div>
+                </div>
+                <div id="map6" class="bigmap">
+                    <img src="image/map/F Block.png" alt="F block">
+                    <a onclick="img6a()" class="arealink" id="R2"></a>
+                    <a onclick="stair()" class="arealink" id="R3"></a>
+                    <a onclick="img6b()" class="arealink" id="R4"></a>
+                    <a onclick="stair()" class="arealink" id="R5"></a>
+                    <a onclick="img6c()" class="arealink" id="R6"></a>
+                    <div onclick="map6()" id="close">&#10006;</div>
+                </div>
+                <div id="img6a" class="bigmap">
+                    <img src="image/school/Social Science Staffroom.png" alt="Music Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr Herriman
+                        </p>
+                    </div>
+                    <div onclick="img6a()" id="close">&#10006;</div>
+                </div>
+                <div id="img6b" class="bigmap">
+                    <img src="image/school/Social Science Staffroom.png" alt="Social Science Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Ms U. Chandra (Head teacher) <br>
+                            Mr S. Han <br> <a href="mailto:Shou.Han1@det.nsw.edu.au">Shou.Han1@det.nsw.edu.au</a> <br>
+                            Mr P, Ms S. Kumar, Ms Moutasallem, Ms L. Madrajat
+                        </p>
+                    </div>
+                    <div onclick="img6b()" id="close">&#10006;</div>
+                </div>
+                <div id="stair" class="bigmap">
+                    <img src="image/school/Stair.png" alt="Stair">
+                    <div onclick="stair()" id="close">&#10006;</div>
+                </div>
+                <div id="img6c" class="bigmap">
+                    <img src="image/school/F hallway.png" alt="F block hallway">
+                    <div onclick="img6c()" id="close">&#10006;</div>
+                </div>
+                <div id="map7" class="bigmap">
+                    <img src="image/map/A Block.png" alt="A block">
+                    <a onclick="stair2()" class="arealink" id="R7"></a>
+                    <a onclick="img7a()" class="arealink" id="R8"></a>
+                    <a onclick="stair2()" class="arealink" id="R9"></a>
+                    <a onclick="img7b()" class="arealink" id="R10"></a>
+                    <a onclick="stair2()" class="arealink" id="R11"></a>
+                    <a onclick="img7c()" class="arealink" id="R12"></a>
+                    <a onclick="img7e()" class="arealink" id="R13"></a>
+                    <a onclick="stair2()" class="arealink" id="R14"></a>
+                    <a onclick="img7f()" class="arealink" id="R15"></a>
+                    <a onclick="img7g()" class="arealink" id="R16"></a>
+                    <a onclick="stair2()" class="arealink" id="R17"></a>
+                    <a onclick="img7h()" class="arealink" id="R18"></a>
+                    <a onclick="img7i()" class="arealink" id="R19"></a>
+                    <div onclick="map7()" id="close">&#10006;</div>
+                </div>
+                <div id="stair2" class="bigmap">
+                    <img src="image/school/Stair.png" alt="Stair">
+                    <div onclick="stair2()" id="close">&#10006;</div>
+                </div>
+                <div id="img7a" class="bigmap">
+                    <img src="image/school/Visual Arts staffroom.png" alt="Visual Arts Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Ms Mannaloras
+                        </p>
+                    </div>
+                    <div onclick="img7a()" id="close">&#10006;</div>
+                </div>
+                <div id="img7b" class="bigmap">
+                    <img src="image/school/PE staffroom.png" alt="PE Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr J. Siu (Head teacher) <br>
+                            Dr K. Awan, Ms P. Rohan, Ms Bebari
+                        </p>
+                    </div>
+                    <div id="staffroom2">
+                        <p>Teachers:<br>
+                            Mr C. Idle (Head teacher) <br>
+                            Mr R. Silburn, Mr Y. Dabblin, Mr M. Melki, Ms D. Isaac, Ms L.Wood
+                        </p>
+                    </div>
+                    <div onclick="img7b()" id="close">&#10006;</div>
+                </div>
+                <div id="img7c" class="bigmap">
+                    <img src="image/school/Link Area.png" alt="Canteen">
+                    <div id="staffroom1">
+                        <a onclick="img7d()"><p>Menu</p></a>
+                    </div>
+                    <div onclick="img7c()" id="close">&#10006;</div>
+                </div>
+                <div id="img7d" class="bigmap">
+                    <img src="image/school/menu.png" alt="Menu">
+                    <div id="staffroom1">
+                        <p>(Hold to zoom)
+                        </p>
+                    </div>
+                    <div onclick="img7d()" id="close">&#10006;</div>
+                </div>
+                <div id="img7e" class="bigmap">
+                    <img src="image/school/Uniform shop.png" alt="Uniform shop">
+                    <div id="staffroom1">
+                        <p>Opening hours: Monday 8am-4pm <br> </p>
+                        <a href="https://www.daylightschoolwear.au/sefton#1"><p>Buy link</p></a>
+                    </div>
+                    <div onclick="img7e()" id="close">&#10006;</div>
+                </div>
+                <div id="img7f" class="bigmap">
+                    <img src="image/school/History staffroom.png" alt="History Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr/Ms M. Konstantaras (Head teacher) <br>
+                            Ms L. Pham, Ms K. Itzstein, Ms Brown, Ms Easterbrook, Mr J. Thompson
+                        </p>
+                    </div>
+                    <div onclick="img7f()" id="close">&#10006;</div>
+                </div>
+                <div id="img7g" class="bigmap">
+                    <img src="image/school/English staffroom.png" alt="English Staffroom">
+                    <div id="staffroom1">
+                        <p>Teachers:<br>
+                            Mr T. Robinson (Head teacher) <br>
+                            Ms R. Curmi, Ms S. Alali, Ms Um, Mr M. Vergara, Mr J. Chang
+                        </p>
+                    </div>
+                    <div onclick="img7g()" id="close">&#10006;</div>
+                </div>
+                <div id="img7h" class="bigmap">
+                    <img src="image/school/A1 hallway.png" alt="A block hallway floor 1">
+                    <div onclick="img7h()" id="close">&#10006;</div>
+                </div>
+                <div id="img7i" class="bigmap">
+                    <img src="image/school/A2 hallway.png" alt="A block hallway floor 2">
+                    <div onclick="img7i()" id="close">&#10006;</div>
+                </div>
+                <div id="map8" class="bigmap">
+                    <div class="mappic">
+                        <img src="image/map/floorb.png" alt="B block">
+                    </div>
+                    <div onclick="map8()" id="close">&#10006;</div>
+                </div>
+                <div id="map9" class="bigmap">
+                    <div class="vr" style="
+                    position: relative;
+                    width: 100%;
+                    height: 0;
+                    padding-top: 56.25%;
+                    padding-bottom: 0;
+                    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+                    overflow: hidden;
+                    border-radius: 15px;
+                    will-change: transform;">
+                     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                       src="https://momento360.com/e/u/b1a55a0448ae45fab6b328ea8c44b912?utm_campaign=embed&utm_source=other&heading=-396.58&pitch=-0.33&field-of-view=75&size=medium&display-plan=true" allowfullscreen="allowfullscreen" allow="fullscreen">
+                     </iframe>
+                    </div>
+                    <div onclick="map9()" id="close">&#10006;</div>
+                </div>
+                <div id="map10" class="bigmap">
+                    <div class="vr" style="
+                    position: relative;
+                    width: 100%;
+                    height: 0;
+                    padding-top: 56.25%;
+                    padding-bottom: 0;
+                    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+                    overflow: hidden;
+                    border-radius: 15px;
+                    will-change: transform;">
+                     <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                       src="https://momento360.com/e/u/74d54a7b78954e7fab07a5c3916c0a86?utm_campaign=embed&utm_source=other&heading=109.91&pitch=11.01&field-of-view=100&size=medium&display-plan=true" allowfullscreen="allowfullscreen" allow="fullscreen">
+                     </iframe>
+                    </div>
+                    <div onclick="map10()" id="close">&#10006;</div>
+                </div>
+                <div id="map11" class="bigmap">
+                    <img src="image/school/Parking.png" alt="Parking">
+                    <div onclick="map11()" id="close">&#10006;</div>
+                </div>
+                <div id="map12" class="bigmap">
+                    <img src="image/school/Front gate.png" alt="Front gate">
+                    <div onclick="map12()" id="close">&#10006;</div>
+                </div>
+                <div id="map13" class="bigmap">
+                    <img src="image/school/Side gate.png" alt="Side gate">
+                    <div onclick="map13()" id="close">&#10006;</div>
+                </div>
+                <div id="map14" class="bigmap">
+                    <img src="image/school/Basketball courts.png" alt="Basketball courts">
+                    <div onclick="map14()" id="close">&#10006;</div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <a href="GG">GG</a>
+    </div> -->
+</body>
+</html>
