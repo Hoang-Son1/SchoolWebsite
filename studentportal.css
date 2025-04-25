@@ -228,7 +228,7 @@ nav a{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0% 5%;
+    padding: 0% 5% 10% 5%;
     flex-wrap: wrap;
     box-sizing: border-box;
     row-gap: 10vh;
@@ -236,7 +236,7 @@ nav a{
 }
 @media screen and (max-width: 1000px){
     .body{
-        padding: 0 10px!important;
+        padding: 0 10px 10% 10px!important;
     }
     .timetable{
         width: 80%!important;
@@ -395,7 +395,7 @@ nav a{
     border: 5px solid black;
     animation: appear 0.5s;
     z-index: 3;
-    /* opacity: 85%; */
+    opacity: 100%;
 }
 @keyframes appear{
     from{
@@ -480,11 +480,15 @@ nav a{
     }
 }
 .zoom a{
+    width: fit-content;
     font-size: 3em;
     line-height: 1.5;
     text-decoration: underline;
     font-style: italic;
     color: black;
+}
+.zoom a:hover{
+    color: blue;
 }
 @media screen and (max-width: 1000px){
     .news{
@@ -561,6 +565,77 @@ nav a{
     border-radius: 15px;
     aspect-ratio: 1;
     object-fit: cover;
+}
+.zoom1{
+    display: none;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1%;
+    margin: auto;
+    flex-direction: row;
+    border: 5px solid black;
+    animation: appear 0.5s;
+    z-index: 3;
+    opacity: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.zoom1 #taskinput{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.zoom1 a{
+    width: fit-content;
+    font-size: 1.15em;
+    line-height: 1.2em;
+    text-decoration: underline;
+    font-style: italic;
+    color: blue;
+}
+.zoom1 #taskclose{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 4vmin;
+    transition: transform 0.25s;
+}
+.zoom1 p, .zoom1 li{
+    width: 100%;
+    border-radius: 25px;
+    padding-top: 2%;
+    margin: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    word-break: break-word;
+    font-size: 1.5em;
+    line-height: 1.55em;
+}
+.zoom1 p span{
+    font-size: 1.75em;
+    line-height: 1.8em;
+}
+.zoom1 p strong{
+    font-size: 1.25em;
+    line-height: 1.3em;
+}
+.zoom1 img{
+    width: 50%;
+    object-fit: contain;
+    align-self: center;
 }
 @media screen and (max-width: 1000px){
     .library{
@@ -675,22 +750,12 @@ nav a{
 }
 .tools1a{
     height: fit-content;
-    width: 40%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 2.25em;
     padding: 0% 5%;
-}
-.tools1b{
-    height: fit-content;
-    width: 50%;
-    text-align: right;
-}
-.tools1b a{
-    height: 100%;
-    width: 100%;
-    font-size: 1.5em;
 }
 .tools2{
     height: fit-content;
@@ -754,21 +819,12 @@ nav a{
 }
 .videos1a{
     height: fit-content;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 2.25em;
-}
-.videos1b{
-    height: fit-content;
-    width: 50%;
-    text-align: right;
-}
-.videos1b a{
-    height: 100%;
-    width: 100%;
-    font-size: 1.5em;
+    padding: 0% 5%;
 }
 .videos2{
     height: fit-content;
@@ -816,7 +872,7 @@ nav a{
     border-radius: 25px;
     word-break: break-word;
     hyphens: auto!important;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 .map1{
     height: fit-content;
@@ -2876,15 +2932,79 @@ nav a{
 /* Body end */
 /* Footer start */
 .footer{
-    margin-top: 20%;
-    height: 5vh;
+    height: fit-content;
+    width: 90%;
+    background-color: #EAEAEA;
+    padding: 2.5% 5%;
+}
+.footer p{
+    margin: 0;
+    color: black;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.footer span{
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
+.foot1{
+    height: fit-content;
     width: 100%;
-    background-color: black;
-    bottom: 0;
-    padding: 0;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.foota{
+    width: 40%;
+    min-width: 200px;
+}
+.footb{
+    width: 15%;
+    padding: 0% 2.5%;
+}
+.footc{
+    width: 40%;
+    min-width: 200px;
+}
+.footc p{
+    font-size: 1em;
+}
+.foot2{
+    height: fit-content;
+    width: 90%;
+    padding-top: 1%;
+}
+@media screen and (max-width: 556px){
+    .foota{
+        width: 80%!important;
+    }
+    .footc{
+        width: 100%!important;
+    }
 }
 /* Footer end */
-/* :focus-visible {
-    outline-color: green;
-} */
+#loader {
+    border: 12px solid #FFA500;
+    border-radius: 50%;
+    border-top: 12px solid white;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    display: none;
+    z-index: 1;
+    /* display: block; */
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

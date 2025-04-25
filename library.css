@@ -249,7 +249,7 @@ nav a{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 0% 5%;
+    padding: 0% 5% 10% 5%;
     flex-wrap: wrap;
     box-sizing: border-box;
     row-gap: 10vh;
@@ -257,7 +257,7 @@ nav a{
 }
 @media screen and (max-width: 1000px){
     .body{
-        padding: 0 10px!important;
+        padding: 0 10px 10% 10px!important;
     }
 }
 .zoom{
@@ -439,4 +439,80 @@ nav a{
     border-radius: 15px;
     aspect-ratio: 1;
     object-fit: cover;
+}
+.footer{
+    height: fit-content;
+    width: 90%;
+    background-color: #EAEAEA;
+    padding: 2.5% 5%;
+}
+.footer p{
+    margin: 0;
+    color: black;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.footer span{
+    font-size: 1.5em;
+    line-height: 1.75em;
+}
+.foot1{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.foota{
+    width: 40%;
+    min-width: 200px;
+}
+.footb{
+    width: 15%;
+    padding: 0% 2.5%;
+}
+.footc{
+    width: 40%;
+    min-width: 200px;
+}
+.footc p{
+    font-size: 1em;
+}
+.foot2{
+    height: fit-content;
+    width: 90%;
+    padding-top: 1%;
+}
+@media screen and (max-width: 556px){
+    .foota{
+        width: 80%!important;
+    }
+    .footc{
+        width: 100%!important;
+    }
+}
+#loader {
+    border: 12px solid #FFA500;
+    border-radius: 50%;
+    border-top: 12px solid white;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    display: none;
+    z-index: 1;
+    /* display: block; */
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

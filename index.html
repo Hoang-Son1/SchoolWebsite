@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/nav/sefton logo.png">
-    <script src="library.js"></script>
+    <script>
+        function login(){
+            location.href ='login.html'
+        }
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                "#loader").style.display = "block";
+                document.querySelector(
+                "body").style.visibility = "hidden";
+                document.querySelector(
+                "#loader").style.visibility = "visible";
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.querySelector(
+                "body").style.visibility = "visible";
+                document.querySelector(
+                "#loader").style.display = "none";
+                document.body.style.overflow = 'visible';
+            }
+        }
+    </script>
     <title>Sefton</title>
 </head>
 <body>
@@ -16,19 +37,19 @@
         </div>
         <div class="navto">
             <div id="nav2" class="navlink">
-                <a href="studentportal.html#timetable">Calendar</a>
+                <a href="#aboutschool">About our school</a>
             </div>
             <div id="nav3" class="navlink">
-                <a href="studentportal.html#news">News</a>
+                <a href="#learning">Learning at our school</a>
             </div>
             <div id="nav4" class="navlink">
-                <a href="#library">Library</a>
+                <a href="#uniform">Uniform</a>
             </div>
             <div id="nav5" class="navlink">
-                <a href="studentportal.html#entertainment">Resources</a>
+                <a href="https://sefton-h.schools.nsw.gov.au/about-our-school/enrolment.html">Enroll</a>
             </div>
             <div id="nav8" class="navlink">
-                <a href="studentportal.html#map">School Diagram</a>                    
+                <a href="contactus.html">Contact us</a>                    
             </div>
         </div>
         <div class="settings">
@@ -48,204 +69,324 @@
             </div>
         </div>
     </nav>
-    <div class="body">
-        <div id="library" class="library">
-            <div class="library1">
-                <div class="library1a">
-                    <p>Textbooks</p>
-                </div>
-            </div>
-            <div class="library2">
-                <div class="book">
-                    <a href="image/library/library12.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library12.jpg" alt="Library12">
-                        </div>
-                        <div class="book1">
-                            <p>MATH STANDARD CAMBRIDGE MATHS</p>
-                        </div>
+        <div class="vr">
+        <iframe loading="lazy"
+        src="https://momento360.com/e/u/b1a55a0448ae45fab6b328ea8c44b912?utm_campaign=embed&utm_source=other&heading=335.87&pitch=12.82&field-of-view=55&size=medium&display-plan=true"
+        allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+        <div class="info">
+            <div class="infoo">
+            <p>
+                Excellence in Education 
+                <br><br>
+                We are committed to academic excellence, community engagement, and student wellbeing—empowering every child to achieve their full potential.                <br><br>
+                <button>
+                    <a href="#learning">
+                        Why Sefton High School?
                     </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library1.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library1.jpg" alt="Library1">
-                        </div>
-                        <div class="book1">
-                            <p>NEW SENIOR MATHEMATICS ADVANCED</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library2.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library2.jpg" alt="Library2">
-                        </div>
-                        <div class="book1">
-                            <p>NEW SENIOR MATHEMATICS EXTENSION 1</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library3.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library3.jpg" alt="Library3">
-                        </div>
-                        <div class="book1">
-                            <p>BUSINESS STUDIES IN ACTION</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library4.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library4.jpg" alt="Library4">
-                        </div>
-                        <div class="book1">
-                            <p>KOREAN FOR DUMMIES</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library5.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library5.jpg" alt="Library5">
-                        </div>
-                        <div class="book1">
-                            <p>INFORMATION PROCESSES AND TECHNOLOGY</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library6.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library6.jpg" alt="Library6">
-                        </div>
-                        <div class="book1">
-                            <p>BIOLOGY IN FOCUS</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library7.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library7.jpg" alt="Library7">
-                        </div>
-                        <div class="book1">
-                            <p>CHEMISTRY IN FOCUS</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library8.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library8.jpg" alt="Library8">
-                        </div>
-                        <div class="book1">
-                            <p>PHYSICS IN FOCUS</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library9.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library9.jpg" alt="Library9">
-                        </div>
-                        <div class="book1">
-                            <p>NSW EARTH AND ENVIRONMENTAL SCIENCE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library10.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library10.jpg" alt="Library10">
-                        </div>
-                        <div class="book1">
-                            <p>ANTIQUITY 1</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library11.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library11.jpg" alt="Library11">
-                        </div>
-                        <div class="book1">
-                            <p>KEY FEATURES OF MODERN HISTORY 1</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="library1">
-                    <div class="library1a">
-                        <p>Reading Books</p>
-                    </div>
-                </div>
-                <div class="book">
-                    <a href="image/library/library13.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library13.jpg" alt="Library13">
-                        </div>
-                        <div class="book1">
-                            <p>MACBETH: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library14.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library14.jpg" alt="Library14">
-                        </div>
-                        <div class="book1">
-                            <p>ROMEO AND JULIET: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library15.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library15.jpg" alt="Library15">
-                        </div>
-                        <div class="book1">
-                            <p>A MIDSUMMER NIGHT'S DREAM: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library16.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library16.jpg" alt="Library16">
-                        </div>
-                        <div class="book1">
-                            <p>TWELFTH NIGHT: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library17.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library17.jpg" alt="Library17">
-                        </div>
-                        <div class="book1">
-                            <p>MUCH ADO ABOUT NOTHING: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="book">
-                    <a href="image/library/library18.jpg" download>
-                        <div class="book1">
-                            <img src="image/library/library18.jpg" alt="Library18">
-                        </div>
-                        <div class="book1">
-                            <p>HAMLET: NO FEAR SHAKESPEARE</p>
-                        </div>
-                    </a>
-                </div>
-
+                </button>
+            </p>
             </div>
         </div>
-
-    </div>
+        <div class="name">
+            <p>Sefton High School</p>
+        </div>
+        </div>
+        <div class="welcome">
+            <p>
+                <span>Welcome to Sefton High School</span>
+                <br>
+                Sefton High School is a partially selective school in South Western Sydney. At Sefton High School, we empower students to reach their full potential through a commitment to academic excellence, personal development and future readiness. Our dedicated Staff provide students with high-quality education, a wide range of programs, and personalised support. We equip our students with a strong foundation for lifelong learning and success. <a href="https://sefton-h.schools.nsw.gov.au/about-our-school/enrolment.html">Enroll</a> in our school today. Check your home address on <a href="https://schoolfinder.education.nsw.gov.au/">School Finder</a> to see if you are within our local intake area.
+            </p>
+        </div>
+        <div id="aboutschool" class="aboutschool">
+            <div class="about1">
+                <p>
+                    <span>About our school</span> <br>
+                    Sefton High School is a co-educational comprehensive and selective high school in South Western Sydney, established in 1961. It has around 1035 students, with equal gender representation. Since 1989, the school has admitted 88 academically selected students into Year 7 annually.
+                    <br>
+                    The school has a culturally, linguistically, and socio-economically diverse student body supported by aspirational families. It is known for high expectations, strong discipline, and quality teaching, resulting in excellent attendance, academic achievement, and personal development. Over 90% of HSC graduates pursue tertiary education.
+                    <br>
+                    Students actively participate in sports at all competitive levels and enjoy a variety of cocurricular activities, leadership roles, and charity initiatives. Camps and competitions enhance social and academic engagement. Student commitment and service are recognised through a school-wide award system. The school embodies the values of its motto: Sincerity, Scholarship, Service.
+                </p>
+            </div>
+            <div class="about2">
+                <p>
+                    <span>What we offer</span>
+                    <br>
+                    • Well maintained and equipped classrooms.
+                    <br>
+                    • Seven fully equipped Science laboratories.
+                    <br>
+                    • Four dedicated computer rooms in each of which there is a full complement of computers which ensures each student in a class has a computer at which to work.
+                    <br>
+                    • An outstanding Library in which resources are continuously updated.
+                    <br>
+                    • Plenty of space, seating and shade for students to enjoy breaks.
+                    <br>
+                    • A Music room with access to a wide range of instruments, equipment and technology.
+                    <br>
+                    • Three Visual Arts rooms with access to a kiln.
+                    <br>
+                    • A well equipped Technology block.
+                    <br>
+                    • Industry standard food preparation facilities are included in one of the two Food Laboratories for students who choose the VET Hospitality course in Years 11 and 12.
+                    <br>
+                    • Sporting facilities include
+                </p>
+            </div>
+            <div class="img">
+            <img src="image/school/Basketball courts.png" alt="basketball court">
+            </div>
+            <div class="about3">
+                <p>
+                <span>School vision</span> <br>
+                Sefton High School is committed to continuous improvement and excellence in education. With high expectations, a structured and disciplined environment, and quality teaching, the school supports student achievement and wellbeing. It prepares students to reach their potential as confident, responsible citizens ready for further education, employment, and contribution to society, guided by the values of integrity, responsibility, and respect.
+                </p>
+            </div>
+        </div>
+        <div id="learning" class="learning">
+            <p class="tittle">Learning at our school</p>
+            <p>Sefton High School provides a wide range of subjects to accomodate student's need and wants</p>
+            <div class="sub">
+                <div class="subject">
+                    <p>
+                        <strong>English courses:</strong> <br>
+                        Year 7 to 10: <br>
+                        English Advanced <br>
+                        English Extention <br>
+                        Year 11 and 12: <br>
+                        Standard English <br>
+                        Advanced English <br>
+                        English Extension 1 <br>
+                        English Extension 2 <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Language courses:</strong> <br>
+                        Year 8 to 10: <br>
+                        French <br>
+                        Japanese <br>
+                        Year 11 to 12: <br>
+                        French Beginners <br>
+                        French Continuers <br>
+                        Japanese Beginners <br>
+                        Japanese Continuers <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Mathematic courses:</strong> <br>
+                        Year 7 to 10: <br>
+                        Math Advanced <br>
+                        Math Extension <br>
+                        Years 11 to 12: <br>
+                        Math Standard (Year 11 &12)
+                        Math Advanced (Years 11 & 12)
+                        Math Extension 1 (Years 11 & 12)
+                        Math Extension 2 (Year 12)
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>History courses:</strong> <br>
+                        Year 7 to 8: <br>
+                        History<br>
+                        Year 9 to 10: <br>
+                        History<br>
+                        Elective history <br>
+                        Year 11 to 12: <br>
+                        Ancient history <br>
+                        Modern history <br>
+                        History extension 1 <br>
+                        Study of Religion 1
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Social Science courses:</strong> <br>
+                        Stage 4 Geography <br>
+                        Stage 5 Geography <br>
+                        Stage 5 Commerce <br>
+                        Stage 6 Business Studies <br>
+                        Stage 6 Economics <br>
+                        Stage 6 Legal Studies <br>
+                        Stage 6 Geography <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>PDHPE courses:</strong> <br>
+                        Year 7 to 8: <br>
+                            PDHPE <br>
+                        Year 9 to 10: <br>
+                            PDHPE <br>
+                            Pass <br>
+                        Year 11 to 12: <br>
+                        Health and movement science <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Science courses:</strong> <br>
+                        Year 7 to 10: <br>
+                        Science <br>
+                        Year 11 to 12: <br>
+                        Chemistry <br>
+                        Physics <br>
+                        Biology <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Technological courses:</strong> <br>
+                        Year 7 to 8: <br>
+                        IT <br>
+                        Year 9 to 10: <br>
+                        IST <br>
+                        Year 11 to 12: <br>
+                        Enterprise computing
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Music courses:</strong> <br>
+                        Year 7: <br>
+                        Music <br>
+                        Year 9 to 12: <br>
+                        Elective music <br>
+                    </p>
+                </div>
+                <div class="subject">
+                    <p>
+                        <strong>Visual Art courses:</strong> <br>
+                        Year 9 to 10: <br>
+                        Elective arts <br>
+                        Year 11 to 12: <br>
+                        Art <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="uniform" class="uniform">
+            <p>
+                <span>Uniform policy</span>
+                <br>
+                In accordance with Sefton High School and Department of School Education Guidelines, it is expected that all students who accept a place at Sefton High School will abide by this dress code. To comply with the Australian Workplace Health and Safety Regulations, black leather shoes, not canvas, are required to be worn.
+                <br>
+                On enrolment, students and parents will sign the Uniform Agreement to comply with this Uniform Policy.
+                <br>
+                The Uniform Policy and the reasons for it will be clearly outlined to students at the first assembly of each year by the Executive in charge and then at appropriate intervals at subsequent assemblies and Year meetings.
+                <br>
+                Uniform will be checked each day by the Period 1 teacher and monitored throughout the day by all teachers.
+                <br>
+                Any student who is not in full school uniform must report to the relevant Deputy Principal when he/she arrives at school.
+            </p>
+            <p><span><a href="https://calendly.com/sefton">Uniform Shop</a></span></p>
+            <div class="p2">
+                <div class="sub2">
+                    <div class="uni">
+                        <p>
+                            <strong>YEAR 7 - 10 GIRLS</strong> <br>
+                            • Sky blue polyester/cotton collared shirt with school crest. 
+                            <br>
+                            • Tartan pleated school skirt or navy blue tailored pants with school logo. 
+                            <br>
+                            • Plain navy blue woollen jumper with school crest. 
+                            <br>
+                            • White ankle socks or plain black stocking tights. 
+                            <br>
+                            • Black leather lace up shoes in the traditional school style with a defined heel (boots or suede shoes are not acceptable; heels should be no higher than 3cm and soles should be no thicker than 2cm for safety). 
+                        </p>
+                    </div>
+                    <div class="uni">
+                        <p>
+                            <strong>YEAR 7 – 10 BOYS</strong> <br>
+                            • Sky blue polyester/cotton collared shirt with school crest. 
+                            <br>
+                            • Navy blue tailored school trousers with school logo or navy blue tailored shorts with school logo. 
+                            <br>
+                            • Narrow plain black belt with no decoration / writing. 
+                            <br>
+                            • Plain navy blue woollen jumper with school crest. 
+                            <br>
+                            • White ankle socks with shorts; white or navy ankle socks with trousers.  
+                            <br>
+                            • Black leather lace up shoes in the traditional school style with a defined heel (boots or suede shoes are not acceptable; heels should be no higher than 3cm and soles should be no thicker than 2cm for safety). 
+                        </p>
+                    </div>
+                    <div class="uni">
+                        <p>
+                            <strong>YEAR 11 - 12 GIRLS</strong> <br>
+                            • White polyester/cotton collared shirt with school crest. 
+                            <br>
+                            • Tartan pleated school skirt or navy blue tailored pants with school logo.  
+                            <br>
+                            • Plain navy blue woollen jumper with school crest.  
+                            <br>
+                            • White ankle socks or plain black stocking tights. 
+                            <br>
+                            • Black leather lace up shoes in the traditional school style with a defined heel (boots or suede shoes are not acceptable; heels should be no higher than 3cm and soles should be no thicker than 2 cm for safety). 
+                        </p>
+                    </div>
+                    <div id="pic" class="uni">
+                        <img src="image/uniform.jpg" alt="uniform1">
+                    </div>
+                    <div class="uni">
+                        <p>
+                            <strong> YEAR 11 - 12 BOYS</strong> <br>
+                            • White polyester/cotton collared shirt with school crest. 
+                            <br>
+                            • Navy blue tailored school trousers with school logo or navy blue tailored shorts with school logo. 
+                            <br>
+                            • Narrow plain black belt with no decoration / writing. 
+                            <br>
+                            • Plain navy blue woollen jumper with school crest  
+                            <br>
+                            • White ankle socks with shorts; white or navy ankle socks with trousers.  
+                            <br>
+                            • Black leather lace up shoes in the traditional school style with a defined heel (boots or suede shoes are not acceptable; heels should be no higher than 3 cm and soles should be no thicker than 2cm for safety).  
+                        </p>
+                    </div>
+                    <div class="uni">
+                        <p>
+                            <strong>PE / SPORT</strong> <br>
+                            • Sky/navy polo shirt with school crest. 
+                            <br>
+                            • Sky/navy school PE shorts. 
+                            <br>
+                            • White ankle socks and lace up sports shoes which support and protect feet during PE/Sport. 
+                            <br>
+                            • School track suit. 
+                        </p>
+                    </div>
+                    <div class="uni">
+                        <p>
+                            <strong>OPTIONAL UNIFORM ITEMS</strong> <br>
+                            • Blazer with school crest. 
+                            <br>
+                            • Polar fleece soft shell jacket 
+                            <br>
+                            • Navy blue cap with school logo or brimmed hat with school logo. The peak of the cap must be worn to the front. The peak of the cap must be worn to the front. This is not to be worn indoors. 
+                            <br>
+                            • Plain navy school hijab with or without a white only cap. 
+                            <br>
+                            • School scarf. 
+                            <br>
+                            • Plain navy turban. 
+                        </p>
+                    </div>
+                    <div id="pic" class="uni">
+                        <img src="image/uniform2.jpg" alt="uniform2">
+                    </div>
+                </div>
+                <div class="sub3">
+                    <img src="image/uniform.jpg" alt="uniform">
+                    <img src="image/uniform2.jpg" alt="uniform">
+                </div>
+            </div>
+        </div>
     <div class="footer">
         <div class="foot1">
             <div class="foota">

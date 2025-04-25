@@ -4,58 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/path/to/cdn/jquery.slim.min.js"></script>
-<script src="/path/to/cdn/jquery.rwdImageMaps.min.js"></script>
-<script>
-    $(document).ready(function(e) {
-  $('img[usemap]').rwdImageMaps();
-  // do something here
-  $('area').on('click', function() {
-    alert($(this).attr('alt') + ' clicked');
-  });
-});
-</script>
+    <script>
+           function form1() {
+            document.getElementById("button4").disabled = true;
+                document.querySelector("#loader").style.display = "block";
+                document.getElementById("blur").style.filter = "blur(3px)";
+                document.getElementById("blur").style.backdropFilter = "blur(3px)";
+                document.getElementById("blur").style.webkitfilter = "blur(3px)";
+                document.getElementById("blur").style.webkitbackdropFilter = "blur(3px)";
+                document.getElementById("body").style.userSelect = "none";
+            }
+    </script>
     <style>
-        img{
-            max-width: 100%;
-            width: auto;
-            height: auto;
-            aspect-ratio: initial;
-        }
-        :focus-visible {
-    outline-color: blue;
+    #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+        display: none;
+        /* display: block; */
     }
-
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .center {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     </style>
 </head>
 <body>
-    <img src="map.png" alt="map" usemap="#sefton" id="sefton">
-    <map name="sefton">
-        <area
-        shape="poly"
-        coords="0,200, 50,180, 200,390, 90,420"
-        alt="D Block"
-        href="#"/>
-        <area
-        shape="poly"
-        coords="100,180, 320,120, 410, 235, 150,300"
-        alt="Recreation area"
-        href="#"/>
-        <area
-        shape="poly"
-        coords="180,300, 500,215, 545,300, 230,390"
-        alt="C Block"
-        href="#"/>
-        <area
-        shape="poly"
-        coords="410,130, 480,120, 510,145, 440,160"
-        alt="G Block"
-        href="#"/>
-        <area
-        shape="poly"
-        coords="470,155, 710,90, 765,140, 760,170, 530,230"
-        alt="E Block"
-        href="#"/>
-</script>
+    <div id="loader" class="center" style="z-index: 1;"></div>
+    <div id="blur" style="z-index: 2; position: fixed;">
+    <button id="button4" onclick="form1()">Moojt bai hsadkl</button>
+    <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <img src="image/school/A1 hallway.png" alt="">
 </body>
 </html>

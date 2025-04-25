@@ -10,6 +10,26 @@
 function logo(){
     location.href ='#body'
 }
+function login(){
+     location.href ='login.html'
+}
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+        "#loader").style.display = "block";
+        document.querySelector(
+        "body").style.visibility = "hidden";
+        document.querySelector(
+        "#loader").style.visibility = "visible";
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.querySelector(
+        "body").style.visibility = "visible";
+        document.querySelector(
+        "#loader").style.display = "none";
+        document.body.style.overflow = 'visible';
+    }
+}
 function back(){
     var A = document.getElementById("Jan");
     var a = document.getElementById("january");
@@ -679,6 +699,47 @@ function img5d(){
 }
 function img5e(){
     var x = document.getElementById("img5e");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+
+function newsno1(){
+    var x = document.getElementById("newsno1");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno2(){
+    var x = document.getElementById("newsno2");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno3(){
+    var x = document.getElementById("newsno3");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno4(){
+    var x = document.getElementById("newsno4");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno5(){
+    var x = document.getElementById("newsno5");
     if (x.style.display == "flex"){
         x.style.display = "none";
     } else{

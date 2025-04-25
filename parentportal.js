@@ -1,14 +1,25 @@
-// function k(){
-//     var x = document.getElementById("language")
-//     if (x.style.display == "none"){
-        
-//     }
-//     else{
-//     location.href ='entertainment.html'
-//     }
-// }
 function logo(){
     location.href ='#body'
+}
+function login(){
+    location.href ='login.html'
+}
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+        "#loader").style.display = "block";
+        document.querySelector(
+        "body").style.visibility = "hidden";
+        document.querySelector(
+        "#loader").style.visibility = "visible";
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.querySelector(
+        "body").style.visibility = "visible";
+        document.querySelector(
+        "#loader").style.display = "none";
+        document.body.style.overflow = 'visible';
+    }
 }
 function back(){
     var A = document.getElementById("Jan");
@@ -765,38 +776,6 @@ function permissionnote1(){
         x.style.display = "flex";
     }
 }
-function permissionnote2(){
-    var x = document.getElementById("permissionnote2");
-    if (x.style.display == "flex"){
-        x.style.display = "none";
-    } else{
-        x.style.display = "flex";
-    }
-}
-function permissionnote3(){
-    var x = document.getElementById("permissionnote3");
-    if (x.style.display == "flex"){
-        x.style.display = "none";
-    } else{
-        x.style.display = "flex";
-    }
-}
-function permissionnote4(){
-    var x = document.getElementById("permissionnote4");
-    if (x.style.display == "flex"){
-        x.style.display = "none";
-    } else{
-        x.style.display = "flex";
-    }
-}
-function permissionnote5(){
-    var x = document.getElementById("permissionnote5");
-    if (x.style.display == "flex"){
-        x.style.display = "none";
-    } else{
-        x.style.display = "flex";
-    }
-}
 function permissionnotemore(){
     var x = document.getElementById("permissionnotemore");
     if (x.style.display == "block"){
@@ -851,5 +830,69 @@ function paymentmore(){
         x.style.display = "none";
     } else{
         x.style.display = "block";
+    }
+}
+function payment6(){
+    var x = document.getElementById("payment6");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function payment7(){
+    var x = document.getElementById("payment7");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function payment8(){
+    var x = document.getElementById("payment8");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno1(){
+    var x = document.getElementById("newsno1");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno2(){
+    var x = document.getElementById("newsno2");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno3(){
+    var x = document.getElementById("newsno3");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno4(){
+    var x = document.getElementById("newsno4");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
+    }
+}
+function newsno5(){
+    var x = document.getElementById("newsno5");
+    if (x.style.display == "flex"){
+        x.style.display = "none";
+    } else{
+        x.style.display = "flex";
     }
 }

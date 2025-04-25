@@ -118,35 +118,10 @@ nav{
     padding: 0% 2%;
     border-radius: 15px;
 }
-#nav4{
-    background-color: rgb(174, 174, 174);
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
-}
 .navlink:hover{
     transform: scale(1.15);
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
-}
-#nav2:hover ~ #nav4{
-    box-shadow: none;
-    background-color: white;
-}
-#nav3:hover ~ #nav4{
-    box-shadow: none;
-    background-color: white;
-}
-#nav5:hover + #nav4{
-    box-shadow: none;
-    background-color: white;
-}
-.navlink:has(+ #nav8:hover){
-    box-shadow: none;
-    background-color: white;
-}
-.navlink:has(~ #nav9:hover){
-    box-shadow: none;
-    background-color: white;
 }
 .settings{
     height: 100%;
@@ -172,6 +147,32 @@ nav{
     display: inline-block;
     align-items: center;
     justify-self: center;
+}
+#nav3{
+    background-color: rgb(174, 174, 174);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.navlink:hover{
+    transform: scale(1.15);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+#nav2:hover + #nav3{
+    box-shadow: none;
+    background-color: white;
+}
+.navlink:has(+ #nav4:hover){
+    box-shadow: none;
+    background-color: white;
+}
+.navlink:has(~ #nav5:hover){
+    box-shadow: none;
+    background-color: white;
+}
+.navlink:has(~ #nav8:hover){
+    box-shadow: none;
+    background-color: white;
 }
 .navimg{
     height: 100%;
@@ -266,22 +267,24 @@ nav a{
 }
 .zoom{
     display: none;
-    height: 70%;
-    width: 70%;
-    background-color: lightcoral;
+    height: 80%;
+    width: 80%;
+    background-color: white;
     border-radius: 25px;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 0;
+    padding: 1%;
     margin: auto;
     flex-direction: row;
     border: 5px solid black;
     animation: appear 0.5s;
     z-index: 3;
-    /* opacity: 85%; */
+    opacity: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 @keyframes appear{
     from{
@@ -295,14 +298,18 @@ nav a{
     }
 }
 #taskinput{
-    height: 100%;
-    width: 95%;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #taskclose{
     height: fit-content;
-    width: 5%;
-    display: flex;
-    justify-content: center;
+    width: fit-content;
+    position: absolute;
+    top: 2%;
+    right: 3%;
     font-size: 4vmin;
     transition: transform 0.25s;
 }
@@ -310,74 +317,76 @@ nav a{
     cursor: pointer;
     transform: scale(1.15);
 }
-.zoom textarea{
+.zoom p, .zoom li{
     height: 100%;
     width: 100%;
     border-radius: 25px;
-    background-color: lightcoral;
-    font-size: 3em;
-    padding: 3%;
-    margin: 0;
-    resize: none;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
-.zoom p{
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    background-color: lightcoral;
-    padding: 3%;
+    padding-top: 2%;
     margin: 0;
     resize: none;
     border: none;
     outline: none;
     box-sizing: border-box;
     word-break: break-word;
+    font-size: 1.5em;
+    line-height: 1.55em;
+}
+.zoom p span{
+    font-size: 1.75em;
+    line-height: 1.8em;
+}
+.zoom p strong{
+    font-size: 1.25em;
+    line-height: 1.3em;
+}
+.zoom img{
+    width: 50%;
+    object-fit: contain;
+    align-self: center;
 }
 @media screen and (max-width: 650px){
     .zoom{
         height: 70%;
         width: 90%;
     }
-    .zoom textarea{
-        font-size: 8vmin!important;
-    }
-    .zoom a{
-        font-size: 8vmin!important;
-    }
-    #taskinput{
-        width: 90%!important;
-    }
     #taskclose{
         font-size: 8vmin!important;
     }
+    .zoom img{
+        width: 80%!important;
+    }
 }
 @media screen and (max-height: 600px){
-    .zoom textarea{
-        font-size: 8vmin!important;
-    }
-    .zoom a{
-        font-size: 8vmin!important;
+    .zoom{
+        height: 70%;
+        width: 90%;
     }
     #taskclose{
         font-size: 8vmin!important;
     }
 }
 .zoom a{
-    font-size: 3em;
-    line-height: 1.5;
+    width: fit-content;
+    font-size: 1.15em;
+    line-height: 1.2em;
     text-decoration: underline;
     font-style: italic;
-    color: black;
+    color: blue;
+}
+.zoom a:hover{
+    color: blue;
 }
 @media screen and (max-width: 1000px){
-    .library{
+    .news{
+        width: 95%!important;
+    }
+}
+@media screen and (max-width: 650px){
+    .news{
         width: 100%!important;
     }
 }
-.library{
+.news{
     height: fit-content;
     width: 95%;
     background-color: #F5F5F7;
@@ -386,9 +395,8 @@ nav a{
     z-index: 0;
     border-radius: 25px;
     word-break: break-word;
-    hyphens: auto!important;
 }
-.library1{
+.news1{
     height: fit-content;
     width: 90%;
     padding: 0% 5%;
@@ -396,54 +404,45 @@ nav a{
     flex-direction: row;
     align-items: center;
 }
-.library1a{
+.news1a{
     height: fit-content;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 2.25em;
-    padding: 0% 3%;
 }
-.library1b a{
-    font-size: 1.5em;
-}
-.library2{
+.news2{
     height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* background-color: lawngreen; */
+    justify-content: center;
 }
-.book{
+.article{
     height: fit-content;
     width: 12%;
     min-width: 75px;
     margin: 2%;
     transition: transform 0.25s;
 }
-.book:hover{
+.article:hover{
     cursor: pointer;
     transform: scale(1.15);
 }
-.book p{
+.article p{
     text-align: center;
     font-size: 1.15em;
 }
-.book a{
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-}
-.library img{
+.news img{
     width: 100%;
     border-radius: 15px;
     aspect-ratio: 1;
     object-fit: cover;
 }
+/* Body end */
+/* Footer start */
 .footer{
     height: fit-content;
     width: 90%;
@@ -496,6 +495,7 @@ nav a{
         width: 100%!important;
     }
 }
+/* Footer end */
 #loader {
     border: 12px solid #FFA500;
     border-radius: 50%;
